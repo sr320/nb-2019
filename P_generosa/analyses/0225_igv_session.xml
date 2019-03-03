@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="/Users/sr320/Documents/GitHub/nb-2019/P_generosa/data/Pgenerosa_v071.fasta" hasGeneTrack="false" hasSequenceTrack="true" locus="PGA_scaffold4__129_contigs__length_65288255:10599396-10703186" path="/Users/sr320/Documents/GitHub/nb-2019/P_generosa/analyses/0225_igv_session.xml" version="8">
+    <Resources>
+        <Resource path="/Users/sr320/Documents/GitHub/nb-2019/P_generosa/data/geo-tran4-v071.sorted.gff"/>
+        <Resource path="/Users/sr320/Documents/GitHub/nb-2019/P_generosa/data/pgen_bsseq_all_R1_bismark_bt2.deduplicated.bedGraph.tdf"/>
+        <Resource path="/Users/sr320/Documents/GitHub/nb-2019/P_generosa/data/Pgenerosa_v070.a.makergene.gff"/>
+    </Resources>
+    <Panel height="191" name="DataPanel" width="1310">
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;100.0;255,255,255;0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/Users/sr320/Documents/GitHub/nb-2019/P_generosa/data/pgen_bsseq_all_R1_bismark_bt2.deduplicated.bedGraph.tdf" name="pgen_bsseq_all_R1_bismark_bt2.deduplicated.bedGraph" normalize="false" renderer="HEATMAP" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+    </Panel>
+    <Panel height="4665" name="FeaturePanel" width="1310">
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="Reference sequence" name="Reference sequence" sortable="false" visible="true"/>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" id="/Users/sr320/Documents/GitHub/nb-2019/P_generosa/data/Pgenerosa_v070.a.makergene.gff" name="Pgenerosa_v070.a.makergene.gff" renderer="BASIC_FEATURE" sortable="false" visible="true" windowFunction="count"/>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="1000000" fontSize="10" id="/Users/sr320/Documents/GitHub/nb-2019/P_generosa/data/geo-tran4-v071.sorted.gff" name="geo-tran4-v071.sorted.gff" renderer="BASIC_FEATURE" sortable="false" visible="true" windowFunction="count"/>
+    </Panel>
+    <PanelLayout dividerFractions="0.33218588640275387"/>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>

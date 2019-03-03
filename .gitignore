@@ -2,3 +2,10 @@
 P_generosa/data/Pgenerosa_v070.fa
 P_generosa/wd/022319/GO-GOslim.sorted
 P_generosa/wd/022319/uniprot-SP-GO.sorted
+*.cov
+P_generosa/data/pgen_bsseq_all_R1_bismark_bt2.deduplicated.bedGraph
+P_generosa/data/pgen_bsseq_all_R1_bismark_bt2.deduplicated.bedGraph.tdf
+P_generosa/data/Pgenerosa_v071.fasta
+P_generosa/data/Pgenerosa_v073.fasta
+P_generosa/data/geo-tran4-v071.sorted.gff
+P_generosa/data/geo-tran4-v071.gff
