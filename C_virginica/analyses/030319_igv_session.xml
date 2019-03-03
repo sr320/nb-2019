@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="/Users/sr320/Dropbox/wd/18-03-15/genome/GCF_002022765.2_C_virginica-3.0_genomic.fa" hasGeneTrack="false" hasSequenceTrack="true" locus="NC_035789.1:1-32650045" path="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/analyses/030319_igv_session.xml" version="8">
+    <Resources>
+        <Resource path="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/analyses/zr2096_10_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph"/>
+        <Resource path="http://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_Gnomon_exon.bed"/>
+        <Resource path="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/analyses/zr2096_5_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph"/>
+        <Resource path="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/analyses/zr2096_9_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph"/>
+        <Resource path="http://gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-12-03-Yaamini-Virginica-Repository/analyses/2018-10-25-MethylKit/2018-11-07-DML-Locations.bed"/>
+        <Resource path="http://gannet.fish.washington.edu/seashell/bu-serine-wd/18-04-29/zr2096_1_s1_R1_val_1_bismark_bt2_pe.deduplicated.bedGraph"/>
+        <Resource path="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/analyses/zr2096_7_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph"/>
+        <Resource path="http://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_Gnomon_mRNA.gff3"/>
+        <Resource path="http://gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-12-03-Yaamini-Virginica-Repository/analyses/2018-10-25-MethylKit/2018-11-07-DMR-Locations.bed"/>
+        <Resource path="http://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_intron.bed"/>
+        <Resource path="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/analyses/zr2096_2_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph"/>
+        <Resource path="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/data/zr2096_10_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph"/>
+        <Resource path="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/analyses/zr2096_4_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph"/>
+        <Resource path="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/analyses/zr2096_6_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph"/>
+        <Resource path="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/analyses/zr2096_3_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph"/>
+        <Resource path="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/analyses/zr2096_8_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph"/>
+        <Resource path="ftp://ftp.ncbi.nlm.nih.gov/genomes/Crassostrea_virginica/Gnomon/ref_C_virginica-3.0_gnomon_top_level.gff3.gz"/>
+        <Resource path="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/analyses/zr2096_1_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph"/>
+        <Resource path="http://owl.fish.washington.edu/halfshell/bu-serine-wd/18-04-29/zr2096_2_s1_R1_val_1_bismark_bt2_pe.deduplicated.bedGraph"/>
+    </Resources>
+    <Panel height="520" name="DataPanel" width="1133">
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;100.0;255,255,255;0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="http://owl.fish.washington.edu/halfshell/bu-serine-wd/18-04-29/zr2096_2_s1_R1_val_1_bismark_bt2_pe.deduplicated.bedGraph" name="zr2096_2_s1_R1_val_1_bismark_bt2_pe.deduplicated.bedGraph" normalize="false" renderer="HEATMAP" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="http://gannet.fish.washington.edu/seashell/bu-serine-wd/18-04-29/zr2096_1_s1_R1_val_1_bismark_bt2_pe.deduplicated.bedGraph" name="zr2096_1_s1_R1_val_1_bismark_bt2_pe.deduplicated.bedGraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/data/zr2096_10_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" name="zr2096_10_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/analyses/zr2096_1_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" name="zr2096_1_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/analyses/zr2096_2_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" name="zr2096_2_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/analyses/zr2096_3_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" name="zr2096_3_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/analyses/zr2096_4_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" name="zr2096_4_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/analyses/zr2096_5_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" name="zr2096_5_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/analyses/zr2096_6_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" name="zr2096_6_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/analyses/zr2096_7_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" name="zr2096_7_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/analyses/zr2096_8_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" name="zr2096_8_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/analyses/zr2096_9_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" name="zr2096_9_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/Users/sr320/Documents/GitHub/nb-2019/C_virginica/analyses/zr2096_10_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" name="zr2096_10_s1_R1_val_1_bismark_bt2_pe.deduplicated.bismark.cov_3x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+    </Panel>
+    <Panel height="1990" name="FeaturePanel" width="1133">
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="Reference sequence" name="Reference sequence" sortable="false" visible="true"/>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" id="http://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_Gnomon_mRNA.gff3" name="C_virginica-3.0_Gnomon_mRNA.gff3" renderer="BASIC_FEATURE" sortable="false" visible="true" windowFunction="count"/>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" id="http://gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-12-03-Yaamini-Virginica-Repository/analyses/2018-10-25-MethylKit/2018-11-07-DML-Locations.bed" name="2018-11-07-DML-Locations.bed" renderer="BASIC_FEATURE" sortable="false" visible="true" windowFunction="count"/>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="-1" fontSize="10" id="http://gannet.fish.washington.edu/spartina/2018-10-10-project-virginica-oa-Large-Files/2018-12-03-Yaamini-Virginica-Repository/analyses/2018-10-25-MethylKit/2018-11-07-DMR-Locations.bed" name="2018-11-07-DMR-Locations.bed" renderer="BASIC_FEATURE" sortable="false" visible="true" windowFunction="count"/>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="http://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_intron.bed" name="C_virginica-3.0_intron.bed" renderer="BASIC_FEATURE" sortable="false" visible="true" windowFunction="count"/>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="ftp://ftp.ncbi.nlm.nih.gov/genomes/Crassostrea_virginica/Gnomon/ref_C_virginica-3.0_gnomon_top_level.gff3.gz" name="ref_C_virginica-3.0_gnomon_top_level.gff3.gz" renderer="BASIC_FEATURE" sortable="false" visible="true" windowFunction="count"/>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="http://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_Gnomon_exon.bed" name="C_virginica-3.0_Gnomon_exon.bed" renderer="BASIC_FEATURE" sortable="false" visible="true" windowFunction="count"/>
+    </Panel>
+    <PanelLayout dividerFractions="0.6683673469387755"/>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>
