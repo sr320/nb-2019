@@ -1,4 +1,3 @@
-
 P_generosa/data/Pgenerosa_v070.fa
 P_generosa/wd/022319/GO-GOslim.sorted
 P_generosa/wd/022319/uniprot-SP-GO.sorted
@@ -9,3 +8,5 @@ P_generosa/data/Pgenerosa_v071.fasta
 P_generosa/data/Pgenerosa_v073.fasta
 P_generosa/data/geo-tran4-v071.sorted.gff
 P_generosa/data/geo-tran4-v071.gff
+.Rproj.user
+nb-2019.Rproj
