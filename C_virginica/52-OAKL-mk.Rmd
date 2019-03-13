@@ -50,7 +50,7 @@ myobj_10 = processBismarkAln(location = file.list_10, sample.id = list("1","2","
 ```
 
 ```{r, eval = FALSE}
-save(myobj_10, file = "../analyses/myobj_09")
+save(myobj_10, file = "../analyses/myobj_52")
 ```
 
 
