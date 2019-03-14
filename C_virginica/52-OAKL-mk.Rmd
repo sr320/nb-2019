@@ -92,7 +92,7 @@ PCASamples(meth_filter)
 
 
 ```{r}
-myDiff=calculateDiffMeth(meth_filter,mc.cores=2)
+myDiff=calculateDiffMeth(meth_filter,mc.cores=4)
 ```
 
 
@@ -113,20 +113,26 @@ myDiff25p=getMethylDiff(myDiff,difference=25,qvalue=0.01)
 
 
 ```{r}
-write.table(myDiff25p, file = "../analyses/myDiff25p.tab", sep = "\t")
+write.table(myDiff25p, file = "analyses/myDiff25p.tab", sep = "\t")
+```
+
+
+```{r}
+# get hyper methylated bases
+myDiff50p.hyper=getMethylDiff(myDiff,difference=50,qvalue=0.01,type="hyper")
+#
+# get hypo methylated bases
+myDiff50p.hypo=getMethylDiff(myDiff,difference=50,qvalue=0.01,type="hypo")
+#
+#
+# get all differentially methylated bases
+myDiff50p=getMethylDiff(myDiff,difference=50,qvalue=0.01)
 ```
 
 
 
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+
+```{r}
+write.table(myDiff50p, file = "analyses/myDiff50p.tab", sep = "\t")
+```
+
