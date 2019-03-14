@@ -81,7 +81,7 @@ getCoverageStats(myobj_10[[5]],plot=TRUE,both.strands=FALSE)
 
 
 ```{r}
-filtered.myobj=filterByCoverage(myobj_10,lo.count=3,lo.perc=NULL,
+filtered.myobj=filterByCoverage(myobj_10,lo.count=5,lo.perc=NULL,
                                       hi.count=NULL,hi.perc=99.9)
 meth_filter=unite(filtered.myobj, destrand=TRUE)
 clusterSamples(meth_filter, dist="correlation", method="ward", plot=TRUE)
