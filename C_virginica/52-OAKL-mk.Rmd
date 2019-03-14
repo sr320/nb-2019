@@ -166,7 +166,7 @@ library(tidyverse)
 ```{r}
 dml52 <-  mutate(myDiff50p, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% 
   mutate_if(is.numeric, as.integer) 
-write_delim(dml52, "analyses/dm52.bed",  delim = '\t', col_names = FALSE)
+write_delim(dml52, "analyses/dml52.bed",  delim = '\t', col_names = FALSE)
 ```
 
 
