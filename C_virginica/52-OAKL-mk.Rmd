@@ -50,33 +50,38 @@ myobj_10 = processBismarkAln(location = file.list_10, sample.id = list("1","2","
 ```
 
 ```{r, eval = FALSE}
-save(myobj_10, file = "../analyses/myobj_52")
+save(myobj_10, file = "analyses/myobj_52")
 ```
 
 
-```{r}
-#load("../analyses/myobj_09")
-```
-
-
+available at http://gannet.fish.washington.edu/seashell/snaps/myobj_52
 
 
 
 ```{r}
-getMethylationStats(myobj_09[[2]],plot=FALSE,both.strands=FALSE)
-```
-
-```{r}
-getMethylationStats(myobj_09[[8]],plot=TRUE,both.strands=FALSE)
-```
-
-```{r}
-getCoverageStats(myobj_09[[4]],plot=TRUE,both.strands=FALSE)
+#load("analyses/myobj_52")
 ```
 
 
+
+
+
 ```{r}
-filtered.myobj=filterByCoverage(myobj_09,lo.count=3,lo.perc=NULL,
+getMethylationStats(myobj_10[[2]],plot=FALSE,both.strands=FALSE)
+```
+
+```{r}
+getMethylationStats(myobj_10
+                    [[8]],plot=TRUE,both.strands=FALSE)
+```
+
+```{r}
+getCoverageStats(myobj_10[[5]],plot=TRUE,both.strands=FALSE)
+```
+
+
+```{r}
+filtered.myobj=filterByCoverage(myobj_10,lo.count=3,lo.perc=NULL,
                                       hi.count=NULL,hi.perc=99.9)
 meth_filter=unite(filtered.myobj, destrand=TRUE)
 clusterSamples(meth_filter, dist="correlation", method="ward", plot=TRUE)
