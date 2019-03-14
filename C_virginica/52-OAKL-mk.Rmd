@@ -56,6 +56,10 @@ save(myobj_10, file = "analyses/myobj_52")
 
 available at http://gannet.fish.washington.edu/seashell/snaps/myobj_52
 
+```{bash}
+#zip ../analyses/myobj_07_3x.zip ../analyses/myobj_07_3x
+```
+
 
 
 ```{r}
@@ -134,5 +138,39 @@ myDiff50p=getMethylDiff(myDiff,difference=50,qvalue=0.01)
 
 ```{r}
 write.table(myDiff50p, file = "analyses/myDiff50p.tab", sep = "\t")
+```
+
+
+
+---
+# Taking the DMLs to a bed
+
+```{r}
+library(readr)
+#myDiff25p <- read_csv("../analyses/myDiff25p.csv")
+ 
+```
+
+
+```{r}
+head(myDiff50p)
+```
+
+
+```{r}
+library(tidyverse)
+```
+
+
+
+```{r}
+dml52 <-  mutate(myDiff50p, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% 
+  mutate_if(is.numeric, as.integer) 
+write_delim(dml52, "analyses/dm52.bed",  delim = '\t', col_names = FALSE)
+```
+
+
+```{r}
+head(dml52)
 ```
 
