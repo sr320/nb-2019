@@ -10,3 +10,8 @@ P_generosa/data/geo-tran4-v071.sorted.gff
 P_generosa/data/geo-tran4-v071.gff
 .Rproj.user
 nb-2019.Rproj
+*.bam
+misc/wd/GO-GOslim.sorted
+C_virginica/.DS_Store
+C_virginica/data/.DS_Store
+C_virginica/data/.DS_Store
