@@ -84,3 +84,18 @@ blastp \
 -max_target_seqs 1 \
 -outfmt 6
 ```
+
+with likely ORFs determined
+
+```
+TransDecoder-4.0.0/TransDecoder.Predict \
+-t $fa \
+--retain_blastp_hits blastout
+```
+
+
+Resulting peptide sequences for candidate ORFs with all shorter candidates within longer ORFs removed:
+
+[0804_Pgen_larvae.fasta.transdecoder.pep](http://owl.fish.washington.edu/halfshell/bu-alanine-wd/17-08-10/0804_Pgen_larvae.fasta.transdecoder.pep)
+
+Number of sequences: 36891
