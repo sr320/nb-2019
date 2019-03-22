@@ -58,7 +58,29 @@ Stats based on ALL transcript contigs:
 
   Transdecoder was run on the assembled transcriptome
 
+
 ```
   TransDecoder.LongOrfs \
 -t trinity_out_dir/0804_Pgen_larvae.fasta
+```
+
+The longest putative open reading frames were identified
+
+```
+/TransDecoder-4.0.0/TransDecoder.LongOrfs \
+-t $fa \
+-S
+```
+
+and BlastP performed
+
+```
+blastp \
+-query PgenlarS-longest_orfs.pep \
+-db uniprot_sprot_080917 \
+-out blastout \
+-num_threads 28 \
+-evalue 1E-05 \
+-max_target_seqs 1 \
+-outfmt 6
 ```
