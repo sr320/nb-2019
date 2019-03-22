@@ -52,4 +52,13 @@ Stats based on ALL transcript contigs:
 	Median contig length: 324
 	Average contig: 500.45
 	Total assembled bases: 72630419
-  ```
+```
+
+  ### Deduced Proteome
+
+  Transdecoder was run on the assembled transcriptome
+
+```
+  TransDecoder.LongOrfs \
+-t trinity_out_dir/0804_Pgen_larvae.fasta
+```
