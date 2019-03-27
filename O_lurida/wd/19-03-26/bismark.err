@@ -1,0 +1,115 @@
+Use of uninitialized value $path_to_bowtie in concatenation (.) or string at /Applications/bioinfo/bismark_v0.21.0/bismark line 6893.
+Bowtie 2 seems to be working fine (tested command 'bowtie2 --version' [2.3.4])
+Output format is BAM (default)
+Alignments will be written out in BAM format. Samtools found here: '/usr/local/bin/samtools'
+Reference genome folder provided is /Users/sr320/Desktop/oly/	(absolute path is '/Users/sr320/Desktop/oly/)'
+FastQ format assumed (by default)
+Processing sequences up to read no. 1000 from the input file
+Each Bowtie 2 instance is going to be run with 4 threads. Please monitor performance closely and tune down if necessary!
+
+Input files to be analysed (in current folder '/Users/sr320/Documents/GitHub/nb-2019/O_lurida/wd/19-03-26'):
+/Users/sr320/Desktop/oly/zr1394_1_s456_trimmed.fq.gz
+Library was specified to be not strand-specific (non-directional), therefore alignments to all four possible bisulfite strands (OT, CTOT, OB and CTOB) will be reported
+Setting parallelization to single-threaded (default)
+
+Summary of all aligner options:	-q --score-min L,0,-0.2 -p 4 --reorder --ignore-quals
+Current working directory is: /Users/sr320/Documents/GitHub/nb-2019/O_lurida/wd/19-03-26
+
+Now reading in and storing sequence information of the genome specified in: /Users/sr320/Desktop/oly/
+
+Single-core mode: setting pid to 1
+
+Single-end alignments will be performed
+=======================================
+
+Input file is in FastQ format
+Processing reads up to sequence no. 1000 from /Users/sr320/Desktop/oly/zr1394_1_s456_trimmed.fq.gz
+Writing a C -> T converted version of the input file zr1394_1_s456_trimmed.fq.gz to zr1394_1_s456_trimmed.fq.gz_C_to_T.fastq
+Writing a G -> A converted version of the input file zr1394_1_s456_trimmed.fq.gz to zr1394_1_s456_trimmed.fq.gz_G_to_A.fastq
+
+Created C -> T as well as G -> A converted versions of the FastQ file zr1394_1_s456_trimmed.fq.gz (1001 sequences in total)
+
+Input files are zr1394_1_s456_trimmed.fq.gz_C_to_T.fastq and zr1394_1_s456_trimmed.fq.gz_G_to_A.fastq (FastQ)
+
+Now running 4 individual instances of Bowtie 2 against the bisulfite genome of /Users/sr320/Desktop/oly/ with the specified options: -q --score-min L,0,-0.2 -p 4 --reorder --ignore-quals
+
+Now starting the Bowtie 2 aligner for CTreadCTgenome (reading in sequences from zr1394_1_s456_trimmed.fq.gz_C_to_T.fastq with options -q --score-min L,0,-0.2 -p 4 --reorder --ignore-quals --norc)
+Using Bowtie 2 index: /Users/sr320/Desktop/oly/Bisulfite_Genome/CT_conversion/BS_CT
+
+Found first alignment:	HWI-C00124:164:C7URDANXX:1:1101:1447:2175_1:N:0:ATCACG	0	Contig166168_CT_converted	610	1	31M	*	0	0	TAAAAAGATTAAAGTTTAAGATAGATAGATT	FFFFFFFFFFFFFFFFFFFFBFFFFFFFB<F	AS:i:0	XS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:31	YT:Z:UU
+Now starting the Bowtie 2 aligner for CTreadGAgenome (reading in sequences from zr1394_1_s456_trimmed.fq.gz_C_to_T.fastq with options -q --score-min L,0,-0.2 -p 4 --reorder --ignore-quals --nofw)
+Using Bowtie 2 index: /Users/sr320/Desktop/oly/Bisulfite_Genome/GA_conversion/BS_GA
+
+Found first alignment:	HWI-C00124:164:C7URDANXX:1:1101:1447:2175_1:N:0:ATCACG	16	Contig93670_GA_converted	3045	1	31M	*	0	0	AATCTATCTATCTTAAACTTTAATCTTTTTA	F<BFFFFFFFBFFFFFFFFFFFFFFFFFFFF	AS:i:0	XS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:31	YT:Z:UU
+Now starting the Bowtie 2 aligner for GAreadCTgenome (reading in sequences from zr1394_1_s456_trimmed.fq.gz_G_to_A.fastq with options -q --score-min L,0,-0.2 -p 4 --reorder --ignore-quals --nofw)
+Using Bowtie 2 index: /Users/sr320/Desktop/oly/Bisulfite_Genome/CT_conversion/BS_CT
+
+Found first alignment:	HWI-C00124:164:C7URDANXX:1:1101:1447:2175_1:N:0:ATCACG	16	Contig7528_CT_converted	5642	0	31M	*	0	0	AATTTATTTATTTTAAATTTTAATTTTTTTA	F<BFFFFFFFBFFFFFFFFFFFFFFFFFFFF	AS:i:-6	XN:i:0	XM:i:1	XO:i:0	XG:i:0	NM:i:1	MD:Z:15T15	YT:Z:UU
+Now starting the Bowtie 2 aligner for GAreadGAgenome (reading in sequences from zr1394_1_s456_trimmed.fq.gz_G_to_A.fastq with options -q --score-min L,0,-0.2 -p 4 --reorder --ignore-quals --norc)
+Using Bowtie 2 index: /Users/sr320/Desktop/oly/Bisulfite_Genome/GA_conversion/BS_GA
+
+Found first alignment:	HWI-C00124:164:C7URDANXX:1:1101:1447:2175_1:N:0:ATCACG	0	Contig15512_GA_converted	8291	0	31M	*	0	0	TAAAAAAATTAAAATTTAAAATAAATAAATT	FFFFFFFFFFFFFFFFFFFFBFFFFFFFB<F	AS:i:-6	XN:i:0	XM:i:1	XO:i:0	XG:i:0	NM:i:1	MD:Z:19C11	YT:Z:UU
+
+>>> Writing bisulfite mapping results to zr1394_1_s456_trimmed_bismark_bt2.bam <<<
+
+
+Reading in the sequence file /Users/sr320/Desktop/oly/zr1394_1_s456_trimmed.fq.gz
+1000 reads; of these:
+  1000 (100.00%) were unpaired; of these:
+    626 (62.60%) aligned 0 times
+    149 (14.90%) aligned exactly 1 time
+    225 (22.50%) aligned >1 times
+37.40% overall alignment rate
+1000 reads; of these:
+  1000 (100.00%) were unpaired; of these:
+    654 (65.40%) aligned 0 times
+    109 (10.90%) aligned exactly 1 time
+    237 (23.70%) aligned >1 times
+34.60% overall alignment rate
+1000 reads; of these:
+  1000 (100.00%) were unpaired; of these:
+    695 (69.50%) aligned 0 times
+    115 (11.50%) aligned exactly 1 time
+    190 (19.00%) aligned >1 times
+30.50% overall alignment rate
+1000 reads; of these:
+  1000 (100.00%) were unpaired; of these:
+    704 (70.40%) aligned 0 times
+    110 (11.00%) aligned exactly 1 time
+    186 (18.60%) aligned >1 times
+29.60% overall alignment rate
+
+Successfully deleted the temporary files zr1394_1_s456_trimmed.fq.gz_C_to_T.fastq and zr1394_1_s456_trimmed.fq.gz_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequences analysed in total:	1000
+Number of alignments with a unique best hit from the different alignments:	305
+Mapping efficiency:	30.5%
+
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	1898
+
+Total methylated C's in CpG context:	263
+Total methylated C's in CHG context:	12
+Total methylated C's in CHH context:	91
+Total methylated C's in Unknown context:	0
+
+Total unmethylated C's in CpG context:	36
+Total unmethylated C's in CHG context:	366
+Total unmethylated C's in CHH context:	1130
+Total unmethylated C's in Unknown context:	0
+
+C methylated in CpG context:	88.0%
+C methylated in CHG context:	3.2%
+C methylated in CHH context:	7.5%
+Can't determine percentage of methylated Cs in Unknown context (CN or CHN) if value was 0
+
+
+Bismark completed in 0d 0h 0m 43s
+
+====================
+Bismark run complete
+====================
+

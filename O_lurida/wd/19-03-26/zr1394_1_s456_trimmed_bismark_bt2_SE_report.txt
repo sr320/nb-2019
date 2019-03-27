@@ -1,40 +1,40 @@
 Bismark report for: /Users/sr320/Desktop/oly/zr1394_1_s456_trimmed.fq.gz (version: v0.21.0)
 Option '--non_directional' specified: alignments to all strands were being performed (OT, OB, CTOT, CTOB)
-Bismark was run with Bowtie 2 against the bisulfite genome of /Users/sr320/Desktop/oly/ with the specified options: -q --score-min L,0,-0.9 -p 4 --reorder --ignore-quals
+Bismark was run with Bowtie 2 against the bisulfite genome of /Users/sr320/Desktop/oly/ with the specified options: -q --score-min L,0,-0.2 -p 4 --reorder --ignore-quals
 
 Final Alignment report
 ======================
 Sequences analysed in total:	1000
-Number of alignments with a unique best hit from the different alignments:	489
-Mapping efficiency:	48.9%
-Sequences with no alignments under any condition:	4
-Sequences did not map uniquely:	507
+Number of alignments with a unique best hit from the different alignments:	305
+Mapping efficiency:	30.5%
+Sequences with no alignments under any condition:	306
+Sequences did not map uniquely:	389
 Sequences which were discarded because genomic sequence could not be extracted:	0
 
 Number of sequences with unique best (first) alignment came from the bowtie output:
-CT/CT:	108	((converted) top strand)
-CT/GA:	109	((converted) bottom strand)
-GA/CT:	121	(complementary to (converted) top strand)
-GA/GA:	151	(complementary to (converted) bottom strand)
+CT/CT:	56	((converted) top strand)
+CT/GA:	66	((converted) bottom strand)
+GA/CT:	77	(complementary to (converted) top strand)
+GA/GA:	106	(complementary to (converted) bottom strand)
 
 Final Cytosine Methylation Report
 =================================
-Total number of C's analysed:	2962
+Total number of C's analysed:	1898
 
-Total methylated C's in CpG context:	335
-Total methylated C's in CHG context:	33
-Total methylated C's in CHH context:	374
-Total methylated C's in Unknown context:	8
+Total methylated C's in CpG context:	263
+Total methylated C's in CHG context:	12
+Total methylated C's in CHH context:	91
+Total methylated C's in Unknown context:	0
 
-Total unmethylated C's in CpG context:	68
-Total unmethylated C's in CHG context:	463
-Total unmethylated C's in CHH context:	1689
-Total unmethylated C's in Unknown context:	11
+Total unmethylated C's in CpG context:	36
+Total unmethylated C's in CHG context:	366
+Total unmethylated C's in CHH context:	1130
+Total unmethylated C's in Unknown context:	0
 
-C methylated in CpG context:	83.1%
-C methylated in CHG context:	6.7%
-C methylated in CHH context:	18.1%
-C methylated in Unknown context (CN or CHN):	42.1%
+C methylated in CpG context:	88.0%
+C methylated in CHG context:	3.2%
+C methylated in CHH context:	7.5%
+Can't determine percentage of methylated Cs in Unknown context (CN or CHN) if value was 0
 
 
-Bismark completed in 0d 0h 1m 18s
+Bismark completed in 0d 0h 0m 43s
