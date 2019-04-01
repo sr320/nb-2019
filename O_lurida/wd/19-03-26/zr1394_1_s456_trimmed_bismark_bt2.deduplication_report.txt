@@ -1,0 +1,7 @@
+
+Total number of alignments analysed in zr1394_1_s456_trimmed_bismark_bt2.bam:	305
+Total number duplicated alignments removed:	0 (0.00%)
+Duplicated alignments were found at:	0 different position(s)
+
+Total count of deduplicated leftover sequences: 305 (100.00% of total)
+
