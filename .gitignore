@@ -16,3 +16,12 @@ C_virginica/.DS_Store
 C_virginica/data/.DS_Store
 C_virginica/data/.DS_Store
 O_lurida/wd/19-03-26/Olurida_v081.fa
+C_gigas/data/uniprot_sprot.fasta
+C_gigas/data/uniprot_sprot.phr
+C_gigas/data/uniprot_sprot.pin
+C_gigas/data/uniprot_sprot.psq
+*.fasta
+P_generosa/Pgenerosa_v071.nhr
+P_generosa/Pgenerosa_v071.nin
+P_generosa/Pgenerosa_v071.nsq
+P_generosa/Pgv071_v071.tab
