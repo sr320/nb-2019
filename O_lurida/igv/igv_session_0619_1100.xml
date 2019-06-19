@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081.fa" hasGeneTrack="false" hasSequenceTrack="true" locus="Contig61096:1-13092" version="8">
+    <Resources>
+        <Resource path="http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081.all.sorted.gff"/>
+        <Resource path="http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081-ks-blastn.gff"/>
+        <Resource path="http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081.mRNA.gff"/>
+    </Resources>
+    <Panel height="538" name="FeaturePanel" width="1416">
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="Reference sequence" name="Reference sequence" sortable="false" visible="true"/>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081.mRNA.gff" name="Olurida_v081.mRNA.gff" renderer="BASIC_FEATURE" sortable="false" visible="true" windowFunction="count"/>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081-ks-blastn.gff" name="Olurida_v081-ks-blastn.gff" renderer="BASIC_FEATURE" sortable="false" visible="true" windowFunction="count"/>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="EXPANDED" featureVisibilityWindow="1000000" fontSize="10" id="http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081.all.sorted.gff" name="Olurida_v081.all.sorted.gff" renderer="BASIC_FEATURE" sortable="false" visible="true" windowFunction="count"/>
+    </Panel>
+    <PanelLayout dividerFractions="0.01092896174863388"/>
+</Session>
