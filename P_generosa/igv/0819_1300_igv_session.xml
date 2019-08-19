@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.fa" hasGeneTrack="false" hasSequenceTrack="true" locus="PGA_scaffold1__77_contigs__length_89643857:22236492-22236531" nextAutoscaleGroup="3" path="/Users/sr320/Documents/GitHub/nb-2019/P_generosa/igv/0819_1300_igv_session.xml" version="8">
+    <Resources>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-175_S14_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-229_S36_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-167_S10_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-206_S27_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-188_S21_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-221_S33_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-127_S33_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-185_S19_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-209_S29_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-152_S3_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-44_S41_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-136_S36_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-111_S29_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-187_S20_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-193_S22_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-214_S30_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-170_S13_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-200_S25_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-205_S26_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-119_S31_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-199_S24_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-220_S32_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-159_S6_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-41_S38_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-184_S18_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-208_S28_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-226_S34_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-128_S34_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-194_S23_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-120_S32_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-181_S16_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-103_S27_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-230_S37_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-42_S39_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-215_S31_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-227_S35_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-151_S2_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-113_S30_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-153_S4_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-104_S28_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-143_S37_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/bu-mox/scrubbed/0807/EPI-170_S13_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.sorted.bam"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-176_S15_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-154_S5_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-160_S7_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-168_S11_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-182_S17_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-169_S12_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-161_S8_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-43_S40_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-162_S9_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+        <Resource path="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-135_S35_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph"/>
+    </Resources>
+    <Panel height="2040" name="DataPanel" width="703">
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;100.0;255,255,255;0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-41_S38_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-41_S38_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;100.0;255,255,255;0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-42_S39_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-42_S39_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;100.0;255,255,255;0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-43_S40_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-43_S40_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;100.0;255,255,255;0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-44_S41_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-44_S41_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;100.0;255,255,255;0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-103_S27_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-103_S27_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;100.0;255,255,255;0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-104_S28_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-104_S28_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;100.0;255,255,255;0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-111_S29_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-111_S29_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;100.0;255,255,255;0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-113_S30_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-113_S30_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;100.0;255,255,255;0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-119_S31_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-119_S31_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;100.0;255,255,255;0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-120_S32_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-120_S32_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;100.0;255,255,255;0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-127_S33_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-127_S33_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;100.0;255,255,255;0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-128_S34_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-128_S34_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;100.0;255,255,255;0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-135_S35_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-135_S35_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;100.0;255,255,255;0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-136_S36_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-136_S36_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-143_S37_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-143_S37_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-151_S2_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-151_S2_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-152_S3_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-152_S3_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-153_S4_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-153_S4_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-154_S5_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-154_S5_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-159_S6_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-159_S6_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-160_S7_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-160_S7_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-161_S8_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-161_S8_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-162_S9_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-162_S9_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-167_S10_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-167_S10_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-168_S11_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-168_S11_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-169_S12_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-169_S12_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-170_S13_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-170_S13_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-175_S14_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-175_S14_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-176_S15_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-176_S15_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-181_S16_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-181_S16_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-182_S17_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-182_S17_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-184_S18_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-184_S18_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-185_S19_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-185_S19_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-187_S20_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-187_S20_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-188_S21_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-188_S21_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-193_S22_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-193_S22_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-194_S23_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-194_S23_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-199_S24_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-199_S24_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-200_S25_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-200_S25_L003_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-205_S26_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-205_S26_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-206_S27_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-206_S27_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-208_S28_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-208_S28_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-209_S29_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-209_S29_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-214_S30_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-214_S30_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-215_S31_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-215_S31_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-220_S32_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-220_S32_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-221_S33_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-221_S33_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-226_S34_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-226_S34_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-227_S35_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-227_S35_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-229_S36_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-229_S36_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.DataSourceTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="https://gannet.fish.washington.edu/seashell/wd/081719/EPI-230_S37_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" name="EPI-230_S37_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov_10x.bedgraph" normalize="false" renderer="BAR_CHART" sortable="true" visible="true" windowFunction="mean">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="100.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+    </Panel>
+    <Panel height="25" name="Panel1566058193862" width="703">
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="60" id="https://gannet.fish.washington.edu/seashell/bu-mox/scrubbed/0807/EPI-170_S13_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.sorted.bam_junctions" name="EPI-170_S13_L002_R1_001_val_1_bismark_bt2_pe.deduplicated.sorted.bam Junctions" sortable="false" visible="false" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="60.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="Reference sequence" name="Reference sequence" sortable="false" visible="true"/>
+    </Panel>
+    <PanelLayout dividerFractions="0.9369951534733441,0.9854604200323102"/>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>
