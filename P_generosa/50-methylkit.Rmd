@@ -82,12 +82,21 @@ getCoverageStats(myobj_145[[5]],plot=TRUE,both.strands=FALSE)
 
 
 ```{r}
-filtered.myobj=filterByCoverage(myobj_145,lo.count=5,lo.perc=NULL,
+filtered.myobj=filterByCoverage(myobj_145,lo.count=10,lo.perc=NULL,
                                       hi.count=NULL,hi.perc=99.9)
 meth_filter=unite(filtered.myobj, destrand=TRUE)
 clusterSamples(meth_filter, dist="correlation", method="ward", plot=TRUE)
 PCASamples(meth_filter)
 ```
+
+
+
+
+
+STOPPED RUNNING CODE HERE
+
+
+
 
 
 
