@@ -7,22 +7,167 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+# Obtain session information
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+```{r}
+sessionInfo()
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
+Ambient-Low	Seed.Trial	Day145 
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+compared to
+
+Super.Low-Low	Seed.Trial	Day145
+
+```{r}
+file.list_10=list('/Volumes/block/geoduck/082119_bam/EPI-205_S26_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                 '/Volumes/block/geoduck/082119_bam/EPI-206_S27_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                 '/Volumes/block/geoduck/082119_bam/EPI-227_S35_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                 '/Volumes/block/geoduck/082119_bam/EPI-226_S34_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                 '/Volumes/block/geoduck/082119_bam/EPI-214_S30_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                 '/Volumes/block/geoduck/082119_bam/EPI-215_S31_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                 '/Volumes/block/geoduck/082119_bam/EPI-220_S32_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                 '/Volumes/block/geoduck/082119_bam/EPI-221_S33_L004_R1_001_val_1_bismark_bt2_pe.deduplicated.sorted.bam'
+)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+
+
+```{r}
+library(methylKit)
+```
+
+
+
+```{r, eval = FALSE}
+myobj_145 = processBismarkAln(location = file.list_10, sample.id = list("205","206","227","226","214","215","220","221"), assembly = "v074", read.context="CpG", mincov=2, treatment = c(0,0,0,0,1,1,1,1))
+```
+
+```{r, eval = FALSE}
+save(myobj_145, file = "analyses/myobj_145")
+```
+
+
+available at https://d.pr/f/GBs1iL
+
+```{bash}
+#zip ../analyses/myobj_07_3x.zip ../analyses/myobj_07_3x
+```
+
+
+
+```{r}
+#load("analyses/myobj_52")
+```
+
+
+
+
+
+```{r}
+getMethylationStats(myobj_145[[2]],plot=FALSE,both.strands=FALSE)
+```
+
+```{r}
+getMethylationStats(myobj_145
+                    [[8]],plot=TRUE,both.strands=FALSE)
+```
+
+```{r}
+getCoverageStats(myobj_145[[5]],plot=TRUE,both.strands=FALSE)
+```
+
+
+```{r}
+filtered.myobj=filterByCoverage(myobj_145,lo.count=5,lo.perc=NULL,
+                                      hi.count=NULL,hi.perc=99.9)
+meth_filter=unite(filtered.myobj, destrand=TRUE)
+clusterSamples(meth_filter, dist="correlation", method="ward", plot=TRUE)
+PCASamples(meth_filter)
+```
+
+
+
+
+```{r}
+myDiff=calculateDiffMeth(meth_filter,mc.cores=4)
+```
+
+
+
+```{r}
+# get hyper methylated bases
+myDiff25p.hyper=getMethylDiff(myDiff,difference=25,qvalue=0.01,type="hyper")
+#
+# get hypo methylated bases
+myDiff25p.hypo=getMethylDiff(myDiff,difference=25,qvalue=0.01,type="hypo")
+#
+#
+# get all differentially methylated bases
+myDiff25p=getMethylDiff(myDiff,difference=25,qvalue=0.01)
+```
+
+
+
+
+```{r}
+write.table(myDiff25p, file = "analyses/myDiff25p.tab", sep = "\t")
+```
+
+
+```{r}
+# get hyper methylated bases
+myDiff50p.hyper=getMethylDiff(myDiff,difference=50,qvalue=0.01,type="hyper")
+#
+# get hypo methylated bases
+myDiff50p.hypo=getMethylDiff(myDiff,difference=50,qvalue=0.01,type="hypo")
+#
+#
+# get all differentially methylated bases
+myDiff50p=getMethylDiff(myDiff,difference=50,qvalue=0.01)
+```
+
+
+
+
+```{r}
+write.table(myDiff50p, file = "analyses/myDiff50p.tab", sep = "\t")
+```
+
+
+
+---
+# Taking the DMLs to a bed
+
+```{r}
+library(readr)
+#myDiff25p <- read_csv("../analyses/myDiff25p.csv")
+ 
+```
+
+
+```{r}
+head(myDiff50p)
+```
+
+
+```{r}
+library(tidyverse)
+```
+
+
+
+```{r}
+dml52 <-  mutate(myDiff50p, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% 
+  mutate_if(is.numeric, as.integer) 
+write_delim(dml52, "analyses/dml52.bed",  delim = '\t', col_names = FALSE)
+```
+
+
+```{r}
+head(dml52)
+```
+
