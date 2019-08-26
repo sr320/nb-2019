@@ -31,3 +31,5 @@ O_lurida/data/Olurida_v081.fa
 *.gz
 P_generosa/analyses/myobj_145
 P_generosa/analyses/EPI-44.destrand
+*5x.bedgraph
+.RData

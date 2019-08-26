@@ -51,6 +51,17 @@ save(myobj_145, file = "analyses/myobj_145")
 ```
 
 
+
+```{r}
+View(getData(myobj_145[[1]]))
+```
+
+```{r}
+View(getData(myobj_145[[2]]))
+```
+
+
+
 available at https://d.pr/f/GBs1iL
 
 ```{bash}
@@ -89,6 +100,14 @@ clusterSamples(meth_filter, dist="correlation", method="ward", plot=TRUE)
 PCASamples(meth_filter)
 ```
 
+
+
+
+
+
+```{r}
+View(getData(meth_filter))
+```
 
 
 
