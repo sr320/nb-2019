@@ -37,3 +37,8 @@ P_generosa/analyses/Pg_val_destrand.10x.bedgraph
 P_generosa/data/Pgenerosa_v074.fa
 *.bedgraph
 *.bed
+P_generosa/analyses/zero_intersect_intron_u.txt
+P_generosa/analyses/sparse_intersect_intron_u.txt
+P_generosa/analyses/50p_intersect_intron_u.txt
+P_generosa/tracks/Panopea-generosa-vv0.74.a3.rm.gff3
+P_generosa/tracks/Pgenerosa_v074.CpG.gff
