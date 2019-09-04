@@ -34,3 +34,6 @@ P_generosa/analyses/EPI-44.destrand
 *5x.bedgraph
 .RData
 P_generosa/analyses/Pg_val_destrand.10x.bedgraph
+P_generosa/data/Pgenerosa_v074.fa
+*.bedgraph
+*.bed
