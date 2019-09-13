@@ -74,31 +74,31 @@ myobj_d10 = processBismarkAln(location = file.list_d10, sample.id = list("111","
 ```
 
 ```{r, eval = FALSE}
-save(myobj_145, file = "analyses/myobj_145")
+save(myobj_d10, file = "analyses/myobj_d10")
 ```
 
 
 
 ```{r}
-View(getData(myobj_145[[1]]))
+View(getData(myobj_d10[[1]]))
 ```
 
 ```{r}
-View(getData(myobj_145[[2]]))
+View(getData(myobj_d10[[2]]))
 ```
 
 
 
-available at https://d.pr/f/GBs1iL
+available at http://gannet.fish.washington.edu/seashell/snaps/myobj_d10
 
 ```{bash}
-#zip ../analyses/myobj_07_3x.zip ../analyses/myobj_07_3x
+zip ../analyses/myobj_d10.zip ../analyses/myobj_d10
 ```
 
 
 
 ```{r}
-#load("analyses/myobj_52")
+#load("analyses/myobj_145")
 ```
 
 
@@ -106,23 +106,23 @@ available at https://d.pr/f/GBs1iL
 
 
 ```{r}
-getMethylationStats(myobj_145[[2]],plot=FALSE,both.strands=FALSE)
+getMethylationStats(myobj_d10[[2]],plot=FALSE,both.strands=FALSE)
 ```
 
 ```{r}
-getMethylationStats(myobj_145
+getMethylationStats(myobj_d10
                     [[8]],plot=TRUE,both.strands=FALSE)
 ```
 
 ```{r}
-getCoverageStats(myobj_145[[5]],plot=TRUE,both.strands=FALSE)
+getCoverageStats(myobj_d10[[5]],plot=TRUE,both.strands=FALSE)
 ```
 
 
 ```{r}
-filtered.myobj=filterByCoverage(myobj_145,lo.count=10,lo.perc=NULL,
-                                      hi.count=NULL,hi.perc=99.9)
-meth_filter=unite(filtered.myobj, destrand=TRUE)
+filtered.myobj=filterByCoverage(myobj_d10,lo.count=5,lo.perc=NULL,
+                                      hi.count=NULL,hi.perc=99)
+meth_filter=methylKit::unite(filtered.myobj, destrand=TRUE)
 clusterSamples(meth_filter, dist="correlation", method="ward", plot=TRUE)
 PCASamples(meth_filter)
 ```
@@ -139,7 +139,6 @@ View(getData(meth_filter))
 
 
 
-STOPPED RUNNING CODE HERE
 
 
 
@@ -148,7 +147,7 @@ STOPPED RUNNING CODE HERE
 
 
 ```{r}
-myDiff=calculateDiffMeth(meth_filter,mc.cores=4)
+myDiff=calculateDiffMeth(meth_filter,mc.cores=1)
 ```
 
 
@@ -189,40 +188,41 @@ myDiff50p=getMethylDiff(myDiff,difference=50,qvalue=0.01)
 
 
 ```{r}
-write.table(myDiff50p, file = "analyses/myDiff50p.tab", sep = "\t")
+write.table(myDiff50p, file = "analyses/myDiff50p_d10.tab", sep = "\t")
 ```
 
 
+
+into textwranger to label col 1
 
 ---
 # Taking the DMLs to a bed
 
 ```{r}
 library(readr)
-#myDiff25p <- read_csv("../analyses/myDiff25p.csv")
+myDiff50p_d10 <- read_tsv("analyses/myDiff50p_d10.tab")
  
 ```
 
 
 ```{r}
-head(myDiff50p)
+view(myDiff50p_d10)
+```
+
+```{r}
+head(myDiff50p_d10)
 ```
 
 
-```{r}
-library(tidyverse)
-```
-
-
 
 ```{r}
-dml52 <-  mutate(myDiff50p, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% 
+dml_d10 <-  mutate(myDiff50p_d10, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% 
   mutate_if(is.numeric, as.integer) 
-write_delim(dml52, "analyses/dml52.bed",  delim = '\t', col_names = FALSE)
+write_delim(dml_d10, "analyses/dml_d10.bed",  delim = '\t', col_names = FALSE)
 ```
 
 
 ```{r}
-head(dml52)
+head(dml_d10)
 ```
 
