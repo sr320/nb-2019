@@ -1,0 +1,228 @@
+---
+title: "52-methykit"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Obtain session information
+
+```{r}
+sessionInfo()
+```
+
+
+Ambient- 8	Day10 
+
+compared to
+
+Super.Low	-7 Day10
+
+![img](https://gannet.fish.washington.edu/seashell/snaps/genome_memory_manuscript_-_Google_Docs_2019-09-13_10-25-37.png)
+
+
+```{r}
+library(tidyverse)
+
+```
+
+```{r}
+episamples <- read_csv("data/sample.info.csv")
+```
+
+
+```{r}
+filter(episamples, TimePoint == "Day10", Initial.Treatment != "Low")
+```
+
+
+```{bash}
+ls /Volumes/block/geoduck/082119_bam/
+
+```
+
+
+
+
+
+```{r}
+file.list_d10=list('/Volumes/block/geoduck/082119_bam/EPI-111_S29_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                 '/Volumes/block/geoduck/082119_bam/EPI-113_S30_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                 '/Volumes/block/geoduck/082119_bam/EPI-143_S37_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                 '/Volumes/block/geoduck/082119_bam/EPI-145_S38_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                 '/Volumes/block/geoduck/082119_bam/EPI-119_S31_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                 '/Volumes/block/geoduck/082119_bam/EPI-120_S32_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                 '/Volumes/block/geoduck/082119_bam/EPI-135_S35_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.sorted.bam',
+                 '/Volumes/block/geoduck/082119_bam/EPI-136_S36_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.sorted.bam'
+)
+```
+
+
+
+
+
+```{r}
+library(methylKit)
+```
+
+
+
+```{r, eval = FALSE}
+myobj_d10 = processBismarkAln(location = file.list_d10, sample.id = list("111","113","143","145","119","120","135","136"), assembly = "v074", read.context="CpG", mincov=2, treatment = c(0,0,0,0,1,1,1,1))
+```
+
+```{r, eval = FALSE}
+save(myobj_145, file = "analyses/myobj_145")
+```
+
+
+
+```{r}
+View(getData(myobj_145[[1]]))
+```
+
+```{r}
+View(getData(myobj_145[[2]]))
+```
+
+
+
+available at https://d.pr/f/GBs1iL
+
+```{bash}
+#zip ../analyses/myobj_07_3x.zip ../analyses/myobj_07_3x
+```
+
+
+
+```{r}
+#load("analyses/myobj_52")
+```
+
+
+
+
+
+```{r}
+getMethylationStats(myobj_145[[2]],plot=FALSE,both.strands=FALSE)
+```
+
+```{r}
+getMethylationStats(myobj_145
+                    [[8]],plot=TRUE,both.strands=FALSE)
+```
+
+```{r}
+getCoverageStats(myobj_145[[5]],plot=TRUE,both.strands=FALSE)
+```
+
+
+```{r}
+filtered.myobj=filterByCoverage(myobj_145,lo.count=10,lo.perc=NULL,
+                                      hi.count=NULL,hi.perc=99.9)
+meth_filter=unite(filtered.myobj, destrand=TRUE)
+clusterSamples(meth_filter, dist="correlation", method="ward", plot=TRUE)
+PCASamples(meth_filter)
+```
+
+
+
+
+
+
+```{r}
+View(getData(meth_filter))
+```
+
+
+
+
+STOPPED RUNNING CODE HERE
+
+
+
+
+
+
+
+```{r}
+myDiff=calculateDiffMeth(meth_filter,mc.cores=4)
+```
+
+
+
+```{r}
+# get hyper methylated bases
+myDiff25p.hyper=getMethylDiff(myDiff,difference=25,qvalue=0.01,type="hyper")
+#
+# get hypo methylated bases
+myDiff25p.hypo=getMethylDiff(myDiff,difference=25,qvalue=0.01,type="hypo")
+#
+#
+# get all differentially methylated bases
+myDiff25p=getMethylDiff(myDiff,difference=25,qvalue=0.01)
+```
+
+
+
+
+```{r}
+write.table(myDiff25p, file = "analyses/myDiff25p.tab", sep = "\t")
+```
+
+
+```{r}
+# get hyper methylated bases
+myDiff50p.hyper=getMethylDiff(myDiff,difference=50,qvalue=0.01,type="hyper")
+#
+# get hypo methylated bases
+myDiff50p.hypo=getMethylDiff(myDiff,difference=50,qvalue=0.01,type="hypo")
+#
+#
+# get all differentially methylated bases
+myDiff50p=getMethylDiff(myDiff,difference=50,qvalue=0.01)
+```
+
+
+
+
+```{r}
+write.table(myDiff50p, file = "analyses/myDiff50p.tab", sep = "\t")
+```
+
+
+
+---
+# Taking the DMLs to a bed
+
+```{r}
+library(readr)
+#myDiff25p <- read_csv("../analyses/myDiff25p.csv")
+ 
+```
+
+
+```{r}
+head(myDiff50p)
+```
+
+
+```{r}
+library(tidyverse)
+```
+
+
+
+```{r}
+dml52 <-  mutate(myDiff50p, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% 
+  mutate_if(is.numeric, as.integer) 
+write_delim(dml52, "analyses/dml52.bed",  delim = '\t', col_names = FALSE)
+```
+
+
+```{r}
+head(dml52)
+```
+
