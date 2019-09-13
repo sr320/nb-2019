@@ -226,3 +226,12 @@ write_delim(dml_d10, "analyses/dml_d10.bed",  delim = '\t', col_names = FALSE)
 head(dml_d10)
 ```
 
+
+```{bash}
+/Applications/bioinfo/bedtools2/bin/intersectBed \
+-u \
+-a analyses/dml_d10.bed \
+-b tracks/Panopea-generosa-vv0.74.a3.gene.gff3 \
+| wc -l
+```
+
