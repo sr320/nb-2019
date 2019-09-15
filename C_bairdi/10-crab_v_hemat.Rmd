@@ -36,31 +36,41 @@ colnames(dino) <- blastcol
 colnames(uni) <- blastcol
 ```
 
-Join tables based on Trinity_protein column
+anti-Join tables based on Trinity_protein column
 ```{r}
-crab <- anti_join(uni, dino, by = "Trinity_protein")
+crab <- anti_join(uni, dino, by = "Trinity_protein") %>% select(Trinity_protein, sseqid, evalue) %>% distinct()
 ```
 
 ```{r}
-view(crab)
+as_tibble(crab)
 ```
 
 *get swiss-prot hits for dino!*  <---
 
 ```{r}
-hemat <- left_join(dino, uni, by = "Trinity_protein")
+hemat <- inner_join(uni, dino, by = "Trinity_protein") %>% select(Trinity_protein, sseqid.x, evalue.x) %>% distinct()
 ```
 
 
 
 
-
-
-
-Save crab and dino separately into analyses
 ```{r}
-write.csv(crab, "../analyses/crab-blastx.tab")
-write.table(dino, "../analyses/hemat-blastx-output.tab")
+as_tibble(hemat)
 ```
 
-Next step: use jupyter notebook to annotate dinoflagellate blastx output. 
+
+Check and make sure hemat and crab Trinity # are unique.
+
+```{r}
+inner_join(hemat, crab, by = "Trinity_protein")
+```
+
+
+
+Save crab and hemat separately into analyses
+```{r}
+write.table(crab,  quote = FALSE, sep = "\t", row.names=FALSE, "analyses/crab-blastx-sp.tab")
+write.table(hemat,  quote = FALSE,sep = "\t", row.names=FALSE, "analyses/hemat-blastx-sp.tab")
+```
+
+
