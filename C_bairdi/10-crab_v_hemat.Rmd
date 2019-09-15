@@ -1,0 +1,66 @@
+---
+title: "sep_crab-hemat"
+output: github_document
+---
+
+R markdown file to separate genes related to _Hematodinium_ and crabs.
+
+Join uniprot-transcriptome BLASTx with dinoflagellate-transcriptome BLASTx
+
+What doesn't match is crab. 
+Create 2 tables: Hematodinium-related and Crab-related. 
+
+*What DOES match, need to preserve and analyse*  <---
+
+Get GOslim terms for each table separately, and dig deeper into genes separately (jupyter notebook). 
+
+```{r}
+library(tidyverse)
+library(data.table)
+```
+
+Read in dinoflagellate-transcriptome BLAST output:
+```{r}
+dino <- read.table("http://owl.fish.washington.edu/scaphapoda/grace/PCSGA-2019/Cb_v1_blastx_uniprot2864_imac.tab", sep = '\t', header = FALSE)
+```
+
+Read in uniprot-transcriptome BLAST output: 
+```{r}
+uni <- read.csv("http://owl.fish.washington.edu/scaphapoda/grace/PCSGA-2019/1108-cbairdiblast-sprot.tab", sep = '\t', header = TRUE)
+```
+
+Rename columns
+```{r}
+blastcol <- c("Trinity_protein", "sseqid", "pident", "length", "mismatch", "gapopen", "qstart", "qend", "sstart", "send", "evalue", "bitscore")
+colnames(dino) <- blastcol
+colnames(uni) <- blastcol
+```
+
+Join tables based on Trinity_protein column
+```{r}
+crab <- anti_join(uni, dino, by = "Trinity_protein")
+```
+
+```{r}
+view(crab)
+```
+
+*get swiss-prot hits for dino!*  <---
+
+```{r}
+hemat <- left_join(dino, uni, by = "Trinity_protein")
+```
+
+
+
+
+
+
+
+Save crab and dino separately into analyses
+```{r}
+write.csv(crab, "../analyses/crab-blastx.tab")
+write.table(dino, "../analyses/hemat-blastx-output.tab")
+```
+
+Next step: use jupyter notebook to annotate dinoflagellate blastx output. 
