@@ -91,6 +91,12 @@ View(getData(myobj_d10[[2]]))
 
 available at http://gannet.fish.washington.edu/seashell/snaps/myobj_d10
 
+
+
+
+
+
+
 ```{bash}
 zip ../analyses/myobj_d10.zip ../analyses/myobj_d10
 ```
@@ -147,7 +153,7 @@ View(getData(meth_filter))
 
 
 ```{r}
-myDiff=calculateDiffMeth(meth_filter,mc.cores=1)
+myDiff=calculateDiffMeth(meth_filter,mc.cores=8)
 ```
 
 
@@ -170,6 +176,37 @@ myDiff25p=getMethylDiff(myDiff,difference=25,qvalue=0.01)
 ```{r}
 write.table(myDiff25p, file = "analyses/myDiff25p.tab", sep = "\t")
 ```
+
+
+```{r}
+# get hyper methylated bases
+myDiff75p.hyper=getMethylDiff(myDiff,difference=75,qvalue=0.01,type="hyper")
+#
+# get hypo methylated bases
+myDiff75p.hypo=getMethylDiff(myDiff,difference=75,qvalue=0.01,type="hypo")
+#
+#
+# get all differentially methylated bases
+myDiff75p=getMethylDiff(myDiff,difference=75,qvalue=0.01)
+```
+
+
+
+
+```{r}
+write.table(myDiff75p, file = "analyses/myDiff75p_d10.tab",  quote = FALSE, sep = "\t", row.names=FALSE)
+
+```
+
+
+```{bash}
+head analyses/myDiff75p_d10.tab
+
+```
+
+
+
+
 
 
 ```{r}
@@ -205,7 +242,6 @@ write.table(myDiff50p, file = "analyses/myDiff50p_d10.tab", sep = "\t")
 
 
 
-into textwranger to label col 1
 
 ---
 # Taking the DMLs to a bed
@@ -247,3 +283,37 @@ head(dml_d10)
 | wc -l
 ```
 
+
+
+
+#75p bed
+
+```{r}
+library(readr)
+myDiffp75_d10 <- read_tsv("analyses/myDiff75p_d10.tab")
+ 
+```
+
+```{r}
+library(dplyr)
+```
+
+
+
+
+```{r}
+dml75_d10 <-  mutate(myDiffp75_d10, start = start -1, end = end + 1) %>% select(chr, start, end, meth.diff) %>% 
+  mutate_if(is.numeric, as.integer) 
+write_delim(dml75_d10, "analyses/dml75_d10.bed",  delim = '\t', col_names = FALSE)
+```
+
+
+
+
+```{bash}
+/Applications/bioinfo/bedtools2/bin/intersectBed \
+-u \
+-a analyses/dml75_d10.bed \
+-b tracks/Panopea-generosa-vv0.74.a3.gene.gff3 \
+| wc -l
+```
