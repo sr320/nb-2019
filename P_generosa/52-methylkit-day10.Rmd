@@ -222,6 +222,18 @@ myDiff50p=getMethylDiff(myDiff,difference=50,qvalue=0.01)
 ```
 
 
+```{r}
+# get hyper methylated bases
+myDiff100p.hyper=getMethylDiff(myDiff,difference=50,qvalue=0.01,type="hyper")
+#
+# get hypo methylated bases
+myDiff100p.hypo=getMethylDiff(myDiff,difference=50,qvalue=0.01,type="hypo")
+#
+#
+# get all differentially methylated bases
+myDiff100p=getMethylDiff(myDiff,difference=50,qvalue=0.01)
+```
+
 
 
 ```{r}

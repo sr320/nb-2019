@@ -1,0 +1,25 @@
+---
+title: "55-karoytpeR"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("karyoploteR")
+```
+
+```{r}
+library(karyoploteR)
+
+custom.genome <- toGRanges(data.frame(chr=c("A", "B"), start=c(1, 1), end=c(100, 200)))
+
+kp <- plotKaryotype(genome = custom.genome)
+```
+
