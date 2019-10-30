@@ -60,5 +60,27 @@ kpPoints(kp, rand.data, pch=".")
 ```
 
 
+```{r}
+pp <- getDefaultPlotParams(plot.type=1)
+pp
+
+```
 
 
+```{r}
+pp$ideogramheight <- 50
+pp$dataallmax <- 100
+```
+
+
+```{r}
+set.seed(1000)
+
+rand.data <- createRandomRegions(genome= duck.genome, nregions=10000, length.mean=1, 
+                                 length.sd=0, mask=NA, non.overlapping=TRUE)
+mcols(rand.data) <- data.frame(y=rnorm(n=10000, mean = 0.5, sd=0.1))
+
+kp <- plotKaryotype(genome = duck.genome, plot.type=1, ideogram.plotter=kpAddCytobands, labels.plotter=kpAddChromosomeNames, chromosomes="auto", zoom=NULL, cytobands=NULL, plot.params=pp, use.cache=TRUE, main=NULL)
+
+kpPoints(kp, rand.data, pch=".")
+```
