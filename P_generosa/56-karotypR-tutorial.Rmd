@@ -24,12 +24,46 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ```{r}
- g.gains <- toGRanges(data.frame(chr=c("1", "5", "17"), start=c(1, 1000, 4000000),
-                      end=c(5000000, 3200000, 80000000)))
+ g.gains <- toGRanges(data.frame(chr=c("1", "1", "5", "17"), start=c(1, 7000000, 1000, 4000000),
+                      end=c(5000000, 90000000, 3200000, 80000000)))
   
   kp <- plotKaryotype(genome= duck.genome)
   kpPlotRegions(kp, g.gains, col="blue")
+  
+head(g.gains)  
 ```
+
+
+```{bash}
+head tracks/Panopea-generosa-vv0.74.a3.intron.bed
+```
+
+
+```{bash}
+sed 's/PGA_scaffold1__77_contigs__length_89643857/1/g' tracks/Panopea-generosa-vv0.74.a3.intron.bed > analyses/_test.1.bed
+
+head tracks/Panopea-generosa-vv0.74.a3.intron.bed
+head analyses/_test.1.bed
+
+```
+
+
+
+
+```{r}
+library(rtracklayer)
+gr_obj =  import("analyses/_test.1.bed")
+
+  
+  kp <- plotKaryotype(genome= duck.genome)
+  kpPlotRegions(kp, gr_obj, col="green")
+```
+
+
+  
+
+
+
 
 
 ```{r}
