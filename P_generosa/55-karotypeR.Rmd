@@ -84,3 +84,38 @@ kp <- plotKaryotype(genome = duck.genome, plot.type=1, ideogram.plotter=kpAddCyt
 
 kpPoints(kp, rand.data, pch=".")
 ```
+
+
+```{bash}
+tail -1 /Users/sr320/Desktop/geo/Panopea-generosa-vv0.74.a3.CDS.gff3
+
+```
+
+
+
+```{bash}
+
+head data/test.bed
+```
+
+
+```{r}
+kp <- plotKaryotype(genome = duck.genome, plot.type=2, ideogram.plotter=kpAddCytobands, labels.plotter=kpAddChromosomeNames, chromosomes="auto", zoom=NULL, cytobands=NULL, plot.params=pp, use.cache=TRUE, main=NULL)
+
+
+ regs <- createRandomRegions(nregions = 1000, length.mean = 10000000, length.sd = 1000000,
+                             non.overlapping = FALSE, genome = duck.genome, mask=NA)
+
+kpPlotRegions(kp, regs, r0 = 0, r1 = 0.8, col="green")
+
+kpPlotRegions(kp, r0 = 0, r1 = 0.8, col="blue")
+
+
+```
+
+
+```{r}
+
+
+```
+

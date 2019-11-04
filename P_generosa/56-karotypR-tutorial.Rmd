@@ -47,6 +47,17 @@ head analyses/_test.1.bed
 
 ```
 
+```{bash}
+tail -1 tracks/Panopea-generosa-vv0.74.a3.gene.gff3
+
+awk -F"\t" 'NR>3 {print $1"\t",$4"\t", $5}' tracks/Panopea-generosa-vv0.74.a3.gene.gff3 |  head
+
+
+awk -F"\t" 'NR>3 {print $1"\t",$4"\t", $5}' tracks/Panopea-generosa-vv0.74.a3.gene.gff3 | sed 's/PGA_scaffold1__77_contigs__length_89643857/1/g' | head
+
+awk -F"\t" 'NR>3 {print $1"\t",$4"\t", $5}' tracks/Panopea-generosa-vv0.74.a3.gene.gff3 | sed 's/PGA_scaffold1__77_contigs__length_89643857/1/g' > analyses/_test.gene.1.bed
+
+```
 
 
 
@@ -54,9 +65,10 @@ head analyses/_test.1.bed
 library(rtracklayer)
 gr_obj =  import("analyses/_test.1.bed")
 
+gene_obj = import("analyses/_test.gene.1.bed")
   
   kp <- plotKaryotype(genome= duck.genome)
-  kpPlotRegions(kp, gr_obj, col="green")
+  kpPlotRegions(kp, gene_obj, col="blue")
 ```
 
 
@@ -70,6 +82,129 @@ gr_obj =  import("analyses/_test.1.bed")
   kp <- plotKaryotype(genome="mm10", plot.type=1, main="The mm10 genome")
 
 ```
+
+
+```{r}
+
+
+
+
+kp <- plotKaryotype(genome= duck.genome)
+
+
+
+
+kpPlotDensity(kp, data=gene_obj,window.size = 100000, col=adjustcolor("blue", 0.5), lwd=0.5, border=adjustcolor("blue", 0.5), r0=0, r1=1)  
+
+  
+```
+
+
+```{bash}
+
+
+cat tracks/EPI-104_S28_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov.destrand.10x.bedgraph | sed 's/PGA_scaffold1__77_contigs__length_89643857/1/g' > analyses/_test.bedGraph
+
+head analyses/_test.bedGraph
+```
+
+```{bash}
+head analyses/_testv2.bedGraph
+```
+
+
+
+```{r}
+test_obj = import.bedGraph("analyses/_testv2.bedGraph")
+```
+
+```{r}
+dmr_obj = import("analyses/dmr.bed")
+```
+
+
+
+```{r}
+head(test_obj)
+```
+
+#filtering
+
+```{r}
+library("tidyverse")
+
+```
+
+
+```{r}
+testv2.bedGraph <- read.csv("analyses/_testv2.bedGraph", sep = "\t", header = FALSE)
+
+view(testv2.bedGraph)
+
+
+testv3.bedGraph <-filter(testv2.bedGraph, V4 > 75)
+```
+
+```{r}
+write_delim(testv3.bedGraph, "analyses/testv3.bedGraph", delim = "\t", col_names = FALSE)
+```
+
+
+```{r}
+
+test3_obj = import.bedGraph("analyses/testv3.bedGraph")
+```
+
+```{r}
+head(test3_obj)
+```
+
+
+
+kp <- plotKaryotype(genome=CV.genome[1:10], ideogram.plotter = NULL, chromosomes=chrs, plot.type=2)
+kpAddCytobandsAsLine(kp)
+kpPlotDensity(kp, data=exons,window.size = 100000, col=adjustcolor("blue", 0.5), lwd=0.5, border=adjustcolor("blue", 0.5), data.panel=1)
+kpPlotDensity(kp, data=genes,window.size = 100000, col=adjustcolor("red", 0.3), lwd=0.5, data.panel=2) #this should plot on the bottom, but doesn't seem to work
+
+```{r}
+pp <- getDefaultPlotParams(plot.type=2)
+pp
+
+```
+
+```{r}
+pp$ideogramheight <- 50
+pp$dataallmax <- 1
+```
+
+
+
+```{r}
+kp <- plotKaryotype(genome=duck.genome, plot.type=2, chromosomes=c("1", "2", "18"))
+  
+  kpPlotDensity(kp, data=gene_obj,window.size = 10000, data.panel=2, col=adjustcolor("blue", 0.5), lwd=0.5, border=adjustcolor("blue", 0.5), r0=.5, r1=1)  
+
+  #kpDataBackground(kp, data.panel = 1, r0=0, r1=0.45)
+  kpAxis(kp, ymin=0, ymax=100, r0=NULL, r1=NULL, data.panel=1, col="gray50", cex=0.5)
+  
+  #kpPoints(kp, chr=rand.datxa$chr, x=rand.data$start, y=rand.data$y,
+           #ymin=-1, ymax=1, r0=0.05, r1=0.4, col="black", pch=".", cex=2)
+  
+  kpPoints(kp, data=test3_obj, x=test3_obj$ranges, y=test3_obj$score,
+           ymin=0, ymax=100, data.panel=1, r0=NULL, r1=NULL, col=adjustcolor("pink", 0.5), pch=".", cex=0.2)
+  
+  kpPlotDensity(kp, data=test3_obj,window.size = 1000, data.panel=2, col=adjustcolor("green", 0.5), lwd=0.5, border=adjustcolor("green", 0.5), r0=0, r1=1) 
+  
+  
+  kpPlotRegions(kp, dmr_obj, col="blue", r0=0, r1=.2, avoid.overlapping = TRUE, num.layers = 2)
+  
+   kpPlotCoverage(kp, regs, ymax = 20, r0=0.8, data.panel=2, r1=1, col="#CCCCFF")
+
+  
+
+```
+
+
 
 ```{r}
   kp <- plotKaryotype(genome=duck.genome, plot.type=1, main="The mm10 genome")
