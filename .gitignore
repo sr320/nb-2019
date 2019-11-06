@@ -51,4 +51,5 @@ P_generosa/analyses/EPI-145_S38_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bi
 P_generosa/analyses/EPI-145_S38_L005_R1_001_val_1_bismark_bt2_pe.deduplicated.bismark.cov.destrand
 C_rogercresseyi/data/Caligus_rogercresseyi_Genome.fa
 P_generosa/analyses/_testout.tab.CpG_report.txt
-P_generosa/analyses/_testout.tab.CpG_report.txt
+P_generosa/analyses/_testout.merge.tab.CpG_report.txt
+
