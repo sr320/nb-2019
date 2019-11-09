@@ -17,14 +17,14 @@ BiocManager::install("DESeq2")
 
 ```{r}
 library(DESeq2)
-browseVignettes("DESeq2")
 
 ```
 
 
 ```{r}
 data <- read.table("analyses/Abundance-merge.txt", header = T, sep = "\t")
-rownames(data) <- data$Feature
+
+rownames(data) <- data$target_id
 data <- data[,-1]
 head(data)
 ```
@@ -45,7 +45,7 @@ str(data)
 deseq2.colData <- data.frame(condition=factor(c(rep("un-infected", 4), rep("infected", 4))), 
                              type=factor(rep("single-read", 8)))
 rownames(deseq2.colData) <- colnames(data)
-deseq2.dds <- DESeqDataSetFromMatrix(countData = data,
+deseq2.dds <- DESeqDataSetFromMatrix(countData = (data),
                                      colData = deseq2.colData, 
                                      design = ~ condition)
 ```
