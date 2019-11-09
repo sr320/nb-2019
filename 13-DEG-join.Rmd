@@ -1,0 +1,57 @@
+---
+title: "13-DEG-join"
+output: html_document
+---
+
+```{r, echo=FALSE}
+library(tidyverse)
+```
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Here we will try to combine blastout, count data, and DEG list....
+
+
+```{r}
+DEG <- read.delim("C_bairdi/analyses/Crab_DEGlist.txt", sep = "\t", header = FALSE)
+str(DEG)
+```
+
+```{r}
+blastout <- read.delim("C_bairdi/analyses/Cb_v1_blastx_sp_imac.tab", header = FALSE)
+```
+
+```{r}
+cts <- read.delim("C_bairdi/analyses/Abundance-merge.txt", sep = "\t")
+```
+
+```{r}
+bigtable <- left_join(cts, DEG, by = c("target_id" = "V1"),  suffix = c(".x", ".y")) %>%
+  rename(log2fc = V3, padj = V7) %>% select(-"V2", -"V4", -"V5", -"V6") %>%  left_join(blastout, by = c("target_id" = "V1")) %>%
+  rename(up_ID = V2, evalue = V11) %>%
+  select(-"V3", -"V4", -"V5", -"V6",-"V7", -"V8", -"V9", -"V10", -"V12")
+  
+
+```
+
+
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

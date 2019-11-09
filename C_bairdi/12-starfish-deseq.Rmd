@@ -14,7 +14,7 @@ star.data <- star.data[,-1]
 ```
 
 ```{r}
-head(star.data)f
+head(star.data)
 ```
 
 
