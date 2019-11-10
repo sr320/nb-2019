@@ -40,22 +40,14 @@ bigtable <- left_join(cts, DEG, by = c("target_id" = "V1"),  suffix = c(".x", ".
 
 ```
 
+
 ```{r}
-write_delim(x = bigtable, path = "C_bairdi/analyses/bigtable.txt")
+head(bigtable)
 ```
 
 
 
-```{r cars}
-summary(cars)
+```{r}
+write_delim(x = bigtable, path = "C_bairdi/analyses/bigtable.txt", delim = "\t")
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
