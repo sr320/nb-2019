@@ -1,0 +1,18 @@
+---
+
+title: "15-Enrichment"
+output: html_document
+---
+
+
+```{bash}
+curl -O https://david.ncifcrf.gov/data/download/chart_01F7E375D21B1573508021226.txt
+```
+
+```{bash}
+head data/chart_01F7E375D21B1573508021226.txt
+```
+
+screenshots
+https://d.pr/i/n74CaC
+
