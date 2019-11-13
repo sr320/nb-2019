@@ -50,3 +50,11 @@ deg.annot <- left_join(deg.table, deg_unip, by = c("acc" = "Entry"))
 write_delim(x = deg.annot, path = "analyses/deg.annot.txt", delim = "\t")
 ```
 
+
+```{r}
+big.annot <- left_join(bigtable, deg_unip, by = c("acc" = "Entry"))
+```
+
+```{r}
+write_delim(x = big.annot, path = "analyses/big.annot.txt", delim = "\t")
+```
