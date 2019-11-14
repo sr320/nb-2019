@@ -1,0 +1,88 @@
+---
+title: "13-DEG-join"
+output: html_document
+---
+
+```{r, echo=FALSE}
+library(tidyverse)
+```
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Here we will try to combine blastout, count data, and DEG list....
+
+
+```{r}
+DEG <- read.delim("analyses/Crab_DEGlist.txt", sep = "\t", header = FALSE)
+str(DEG)
+```
+
+```{r}
+blastout <- read.delim("analyses/Cb_v1_blastx_sp_imac.tab", header = FALSE)
+```
+
+```{r}
+cts <- read.delim("analyses/Abundance-merge.txt", sep = "\t")
+```
+
+```{r}
+bigtable <- left_join(cts, DEG, by = c("target_id" = "V1"),  suffix = c(".x", ".y")) %>%
+  rename(log2fc = V3, padj = V7) %>% select(-"V2", -"V4", -"V5", -"V6") %>%  left_join(blastout, by = c("target_id" = "V1")) %>%
+  rename(up_ID = V2, evalue = V11) %>%
+  select(-"V3", -"V4", -"V5", -"V6",-"V7", -"V8", -"V9", -"V10", -"V12") %>%
+  separate(up_ID, into = c(NA, "acc"), remove = FALSE)
+  
+
+```
+
+
+```{r}
+head(bigtable)
+```
+
+
+
+```{r}
+write_delim(x = bigtable, path = "C_bairdi/analyses/bigtable.txt", delim = "\t")
+```
+
+
+
+How many DEGs?
+```{r}
+nrow(
+  bigtable %>% filter(!is.na(padj))
+)
+```
+
+How many contigs are expressed higher in Infected crabs?
+
+```{r}
+nrow(
+  bigtable %>% filter(log2fc < 0)
+)
+```
+
+
+How many contigs are at lower level in infected crabs?
+
+```{r}
+nrow(
+  bigtable %>% filter(log2fc > 0)
+)
+```
+
+How many contigs ONLY expressed in Infected crabs
+```{r}
+nrow(
+  bigtable %>% filter(X329777_L2 == 0,  X329777_L1== 0, X329775_L2== 0, X329775_L1== 0)
+)
+```
+
+
+

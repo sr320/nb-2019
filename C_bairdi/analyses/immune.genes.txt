@@ -1,0 +1,141 @@
+Protein.names
+X-ray repair cross-complementing protein 6 (EC 3.6.4.-) (EC 4.2.99.-) (5'-deoxyribose-5-phosphate lyase Ku70) (5'-dRP lyase Ku70) (70 kDa subunit of Ku antigen) (ATP-dependent DNA helicase 2 subunit 1) (ATP-dependent DNA helicase II 70 kDa subunit) (CTC box-binding factor 75 kDa subunit) (CTC75) (CTCBF) (DNA repair protein XRCC6) (Lupus Ku autoantigen protein p70) (Ku70) (Thyroid-lupus autoantigen) (TLAA) (X-ray repair complementing defective repair in Chinese hamster cells 6)
+Signal peptide peptidase-like 2B (SPP-like 2B) (SPPL2b) (EC 3.4.23.-)
+Ficolin-1 (Collagen/fibrinogen domain-containing protein 1) (Ficolin-A) (Ficolin-alpha) (M-ficolin)
+Serine incorporator 3
+Pre-mRNA-processing factor 19 homolog 2 (EC 2.3.2.27) (MOS4-associated complex protein 3B) (MAC protein 3B) (Plant U-box protein 60) (RING-type E3 ubiquitin transferase PRP19 2) (U-box domain-containing protein 60)
+Ubiquitin thioesterase otulin (EC 3.4.19.12) (Deubiquitinating enzyme otulin) (OTU domain-containing deubiquitinase with linear linkage specificity) (Ubiquitin thioesterase Gumby)
+Uncharacterized peptidase C1-like protein F26E4.3
+Acidic mammalian chitinase (AMCase) (EC 3.2.1.14)
+Mitogen-activated protein kinase p38b (MAP kinase p38b) (MAPK p38b) (EC 2.7.11.24)
+High mobility group protein DSP1 (Protein dorsal switch 1)
+DNA-directed RNA polymerase III subunit RPC2 (RNA polymerase III subunit C2) (EC 2.7.7.6) (C128) (DNA-directed RNA polymerase III 127.6 kDa polypeptide) (DNA-directed RNA polymerase III subunit B)
+NLR family CARD domain-containing protein 3 (CARD15-like protein) (Caterpiller protein 16.2) (CLR16.2) (NACHT, LRR and CARD domains-containing protein 3) (Nucleotide-binding oligomerization domain protein 3)
+Inactive phospholipase C-like protein 2 (PLC-L(2)) (PLC-L2) (Phospholipase C-L2) (Phospholipase C-epsilon-2) (PLC-epsilon-2)
+Dipeptidyl peptidase 1 (EC 3.4.14.1) (Cathepsin C) (Cathepsin J) (Dipeptidyl peptidase I) (DPP-I) (DPPI) (Dipeptidyl transferase) [Cleaved into: Dipeptidyl peptidase 1 exclusion domain chain (Dipeptidyl peptidase I exclusion domain chain); Dipeptidyl peptidase 1 heavy chain (Dipeptidyl peptidase I heavy chain); Dipeptidyl peptidase 1 light chain (Dipeptidyl peptidase I light chain)]
+Serine/threonine-protein kinase RIO3 (EC 2.7.11.1) (RIO kinase 3)
+Spondin-2 (Mindin)
+E3 ubiquitin-protein ligase DTX3L (EC 2.3.2.27) (Protein deltex-3-like) (RING-type E3 ubiquitin transferase DTX3L)
+Serine/threonine-protein kinase pelle (EC 2.7.11.1)
+Toll-like receptor Tollo (Toll-like receptor 8)
+Ras GTPase-activating protein-binding protein 2 (G3BP-2) (GAP SH3 domain-binding protein 2)
+Evolutionarily conserved signaling intermediate in Toll pathway, mitochondrial
+Exocyst complex component 2 (Exocyst complex component Sec5)
+Protein spaetzle 5 (Neurotrophic factor 2) (Protein spatzle 5)
+Protein artemis (EC 3.1.-.-) (DNA cross-link repair 1C protein)
+Deoxynucleoside triphosphate triphosphohydrolase SAMHD1 (dNTPase) (EC 3.1.5.-)
+Calcium/calmodulin-dependent protein kinase type IV (CaMK IV) (EC 2.7.11.17) (CaM kinase-GR)
+DNA-directed RNA polymerase III subunit RPC4 (RNA polymerase III subunit C4) (DNA-directed RNA polymerase III subunit D)
+Angiopoietin-1 receptor (EC 2.7.10.1) (Endothelial tyrosine kinase) (HYK) (STK1) (Tunica interna endothelial cell kinase) (Tyrosine kinase with Ig and EGF homology domains-2) (Tyrosine-protein kinase receptor TEK) (Tyrosine-protein kinase receptor TIE-2) (mTIE2) (p140 TEK) (CD antigen CD202b)
+DNA mismatch repair protein Msh2 (hMSH2) (MutS protein homolog 2)
+Ankyrin repeat and KH domain-containing protein 1 (HIV-1 Vpr-binding ankyrin repeat protein) (Multiple ankyrin repeats single KH domain) (hMASK)
+1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase (EC 3.1.4.11) (1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase beta) (No receptor potential A protein) (Phosphoinositide phospholipase C) (Phosphoinositide phospholipase C-beta)
+SRSF protein kinase 1 (EC 2.7.11.1) (SFRS protein kinase 1) (Serine/arginine-rich protein-specific kinase 1) (SR-protein-specific kinase 1)
+Tubulointerstitial nephritis antigen-like (Glucocorticoid-inducible protein 5)
+Chitotriosidase-1 (EC 3.2.1.14) (Chitinase-1)
+Beta-1,3-glucan-binding protein (GBP)
+Acid sphingomyelinase-like phosphodiesterase 3b (ASM-like phosphodiesterase 3b) (EC 3.1.4.-)
+Putative phosphatidate phosphatase (EC 3.1.3.4) (Germ cell guidance factor) (Phosphatidic acid phosphatase type 2) (Protein wunen)
+DNA mismatch repair protein Msh2 (MutS protein homolog 2)
+Dual specificity protein phosphatase 10 (EC 3.1.3.16) (EC 3.1.3.48)
+Ubiquitin-like protein ATG12 (Autophagy-related protein 12) (APG12-like)
+N6-adenosine-methyltransferase catalytic subunit (EC 2.1.1.348) (Methyltransferase-like protein 3) (hMETTL3) (N6-adenosine-methyltransferase 70 kDa subunit) (MT-A70)
+Deformed epidermal autoregulatory factor 1 (Protein DEAF-1)
+Nucleolar RNA helicase 2 (EC 3.6.4.13) (DEAD box protein 21) (Gu-alpha) (Nucleolar RNA helicase Gu) (Nucleolar RNA helicase II) (RH II/Gu)
+Tubulin--tyrosine ligase-like protein 12 (Inactive tubulin--tyrosine ligase-like protein 12)
+ATP-dependent RNA helicase A (EC 3.6.4.13) (DEAH box protein 9) (DExH-box helicase 9) (Leukophysin) (LKP) (Nuclear DNA helicase II) (NDH II) (RNA helicase A)
+Proteasome subunit alpha type-1 (EC 3.4.25.1)
+Probable ATP-dependent RNA helicase DDX60 (EC 3.6.4.13) (DEAD box protein 60)
+Hamartin (Tuberous sclerosis 1 protein homolog)
+Proteasome subunit alpha type-1 (EC 3.4.25.1) (Macropain subunit C2) (Multicatalytic endopeptidase complex subunit C2) (Proteasome component C2) (Proteasome nu chain)
+Sterile alpha and TIR motif-containing protein 1 (Tir-1 homolog) (dSarm)
+Protein ILRUN
+Matrix metalloproteinase-2 (Dm2-MMP) (EC 3.4.24.-)
+Autophagy protein 5 (APG5-like)
+E3 ubiquitin-protein ligase Itchy (EC 2.3.2.26) (HECT-type E3 ubiquitin transferase Itchy homolog)
+Ubiquitin thioesterase OTUB1 (EC 3.4.19.12) (Deubiquitinating enzyme OTUB1) (OTU domain-containing ubiquitin aldehyde-binding protein 1) (Otubain-1) (Ubiquitin-specific-processing protease OTUB1)
+Polycomb complex protein BMI-1 (Polycomb group RING finger protein 4)
+eIF-2-alpha kinase GCN2 (Eukaryotic translation initiation factor 2-alpha kinase 4) (EC 2.7.11.1) (GCN2-like protein) (mGCN2)
+Lysine--tRNA ligase (EC 2.7.7.-) (EC 6.1.1.6) (Lysyl-tRNA synthetase) (LysRS)
+Methionine-R-sulfoxide reductase B1 (MsrB1) (EC 1.8.4.12) (EC 1.8.4.14) (Selenoprotein R) (SelR) (Selenoprotein X) (SelX)
+eIF-2-alpha kinase GCN2 (EC 2.7.11.1) (Eukaryotic translation initiation factor 2-alpha kinase 4) (GCN2-like protein)
+Leukocyte elastase inhibitor A (Serine protease inhibitor EIA) (Serpin B1a)
+Importin-7 (Imp7) (Ran-binding protein 7) (RanBP7)
+Enolase (EC 4.2.1.11) (2-phospho-D-glycerate hydro-lyase) (2-phosphoglycerate dehydratase)
+BTB/POZ domain-containing adapter for CUL3-mediated RhoA degradation protein 2 (BTB/POZ domain-containing protein TNFAIP1) (Tumor necrosis factor-induced protein 1)
+Wiskott-Aldrich syndrome protein (WASp)
+Golgi-specific brefeldin A-resistance guanine nucleotide exchange factor 1 (BFA-resistant GEF 1)
+Cactin (zCactin)
+Mitochondrial import inner membrane translocase subunit Tim10
+Glutathione hydrolase 1 proenzyme (EC 3.4.19.13) (Gamma-glutamyltransferase 1) (Gamma-glutamyltranspeptidase 1) (GGT 1) (EC 2.3.2.2) (Leukotriene-C4 hydrolase) (EC 3.4.19.14) (CD antigen CD224) [Cleaved into: Glutathione hydrolase 1 heavy chain; Glutathione hydrolase 1 light chain]
+Protein pellino
+Ubiquitin carboxyl-terminal hydrolase 14 (EC 3.4.19.12) (Deubiquitinating enzyme 14) (Ubiquitin thioesterase 14) (Ubiquitin-specific-processing protease 14)
+Serine protease persephone (EC 3.4.21.-)
+Mothers against decapentaplegic homolog 3 (MAD homolog 3) (Mad3) (Mothers against DPP homolog 3) (SMAD family member 3) (SMAD 3) (Smad3)
+ATP-dependent DNA/RNA helicase DHX36 (EC 3.6.4.13) (DEAD/H box polypeptide 36) (DEAH box protein 36) (MLE-like protein 1) (RNA helicase associated with AU-rich element ARE)
+Toll-interacting protein
+SEC14-like protein 1
+Calcium release-activated calcium channel protein 1 (Protein orai-1) (Transmembrane protein 142A)
+S-phase kinase-associated protein 2 (Cyclin-A/CDK2-associated protein p45) (F-box protein Skp2) (F-box/LRR-repeat protein 1) (p45skp2)
+Pro-cathepsin H [Cleaved into: Cathepsin H mini chain; Cathepsin H (EC 3.4.22.16); Cathepsin H heavy chain; Cathepsin H light chain]
+DNA-directed RNA polymerase III subunit RPC6 (RNA polymerase III subunit C6) (DNA-directed RNA polymerase III subunit F)
+Cell division cycle 5-like protein (Cdc5-like protein) (Atypical R2R3-MYB transcription factor CDC5) (MOS4-associated complex protein 1) (MAC protein 1) (Protein MYB DOMAIN CELL DIVISION CYCLE 5) (AtMYBCD5)
+Progranulin (PGRN) (Acrogranin) (Epithelin precursor) (Glycoprotein of 88 Kda) (GP88) (Glycoprotein 88) (Granulin precursor) (PC cell-derived growth factor) (PCDGF) (Proepithelin) (PEPI) [Cleaved into: Paragranulin; Granulin-1 (Granulin G); Granulin-2 (Granulin F); Granulin-3 (Epithelin-2) (Granulin B); Granulin-4 (Epithelin-1) (Granulin A); Granulin-5 (Granulin C); Granulin-6 (Granulin D); Granulin-7 (Granulin E)]
+Deoxyribonuclease-2-alpha (EC 3.1.22.1) (Acid DNase) (Deoxyribonuclease II alpha) (DNase II alpha) (Lysosomal DNase II) (R31240_2)
+Tetratricopeptide repeat protein 4 (TPR repeat protein 4)
+26S proteasome non-ATPase regulatory subunit 2 homolog A (26S proteasome regulatory subunit RPN1a) (AtRPN1a) (26S proteasome regulatory subunit S2 homolog A)
+Nucleosome-remodeling factor subunit NURF301 (Enhancer of bithorax) (Nucleosome-remodeling factor 215 kDa subunit) (NURF-215)
+DNA-directed RNA polymerase III subunit RPC3 (RNA polymerase III subunit C3) (DNA-directed RNA polymerase III subunit C)
+Protein SGT1 homolog A (AtSGT1a) (Suppressor of G2 allele of SKP1 homolog A)
+Ras-related protein Ral-a
+Prolow-density lipoprotein receptor-related protein 1 (LRP-1) (Alpha-2-macroglobulin receptor) (A2MR) (CD antigen CD91) [Cleaved into: Low-density lipoprotein receptor-related protein 1 85 kDa subunit (LRP-85); Low-density lipoprotein receptor-related protein 1 515 kDa subunit (LRP-515); Low-density lipoprotein receptor-related protein 1 intracellular domain (LRPICD)]
+Beclin-1-like protein (Autophagy protein 6-like) (APG6-like)
+Zinc finger protein 809
+Complement component 1 Q subcomponent-binding protein, mitochondrial (GC1q-R protein) (Glycoprotein gC1qBP) (C1qBP)
+Paired amphipathic helix protein Sin3a (Histone deacetylase complex subunit Sin3a) (Transcriptional corepressor Sin3a)
+Ubiquitin thioesterase OTUB1 (EC 3.4.19.12) (Deubiquitinating enzyme OTUB1) (OTU domain-containing ubiquitin aldehyde-binding protein 1) (Otubain-1) (hOTU1) (Ubiquitin-specific-processing protease OTUB1)
+Interleukin-1 receptor-associated kinase 4 (IRAK-4) (EC 2.7.11.1)
+Nuclear factor NF-kappa-B p110 subunit (Rel-p110) (Relish protein) [Cleaved into: Nuclear factor NF-kappa-B p68 subunit (Rel-p68); Nuclear factor NF-kappa-B p49 subunit (Rel-p49)]
+E3 ubiquitin-protein ligase TRIM23 (EC 2.3.2.27) (ADP-ribosylation factor domain-containing protein 1) (GTP-binding protein ARD-1) (RING finger protein 46) (RING-type E3 ubiquitin transferase TRIM23) (Tripartite motif-containing protein 23)
+Dedicator of cytokinesis protein 2 (Protein Hch)
+DNA-directed RNA polymerase III subunit RPC10 (RNA polymerase III subunit C10) (DNA-directed RNA polymerase III subunit K) (RNA polymerase III 12.5 kDa subunit) (RPC12.5) (RNA polymerase III subunit C11) (HsC11p) (RPC11) (hRPC11)
+Guanylate-binding protein 6 (GTP-binding protein 6) (GBP-6) (Guanine nucleotide-binding protein 6)
+60 kDa SS-A/Ro ribonucleoprotein (60 kDa Ro protein) (60 kDa ribonucleoprotein Ro) (Ro60) (RoRNP) (TROVE domain family member 2)
+Lamin Dm0
+DNA-directed RNA polymerase III subunit RPC8 (RNA polymerase III subunit C8) (DNA-directed RNA polymerase III subunit H) (RNA polymerase III subunit 22.9 kDa subunit) (RPC22.9)
+Transmembrane protein 120 homolog
+Phospholipid scramblase 1 (PL scramblase 1) (Ca(2+)-dependent phospholipid scramblase 1)
+Plastin-2 (65 kDa macrophage protein) (L-plastin) (Lymphocyte cytosolic protein 1) (LCP-1) (pp65)
+Protein spaetzle 4 (Protein spatzle 4)
+Glycogen phosphorylase (EC 2.4.1.1)
+DNA-directed RNA polymerase III subunit RPC5 (RNA polymerase III subunit 5) (RNA polymerase III subunit C5) (Sex-lethal interactor homolog) (Sxl interactor)
+E3 ubiquitin-protein ligase MARCH8 (EC 2.3.2.27) (Membrane-associated RING finger protein 8) (Membrane-associated RING-CH protein VIII) (MARCH-VIII) (RING-type E3 ubiquitin transferase MARCH8)
+Ubiquitin carboxyl-terminal hydrolase CYLD (EC 3.4.19.12) (Deubiquitinating enzyme CYLD) (Ubiquitin thioesterase CYLD) (Ubiquitin-specific-processing protease CYLD)
+Sphingosine kinase 2 (SK 2) (SPK 2) (EC 2.7.1.91)
+ATP-dependent helicase brm (EC 3.6.4.12) (Homeotic gene regulator) (Protein brahma)
+Glutathione peroxidase 1 (EC 1.11.1.9)
+YTH domain-containing family protein 2
+Putative serine protease K12H4.7 (EC 3.4.-.-)
+Protein toll
+Serine/threonine-protein kinase ATM (EC 2.7.11.1) (Telomere fusion protein)
+Guanylate-binding protein 2 (EC 3.6.5.-) (GTP-binding protein 2) (GBP-2) (HuGBP-2) (Guanine nucleotide-binding protein 2) (Interferon-induced guanylate-binding protein 2)
+X-ray repair cross-complementing protein 5 (EC 3.6.4.-) (86 kDa subunit of Ku antigen) (ATP-dependent DNA helicase 2 subunit 2) (ATP-dependent DNA helicase II 80 kDa subunit) (CTC box-binding factor 85 kDa subunit) (CTC85) (CTCBF) (DNA repair protein XRCC5) (Ku80) (Ku86) (Lupus Ku autoantigen protein p86) (Nuclear factor IV) (Thyroid-lupus autoantigen) (TLAA) (X-ray repair complementing defective repair in Chinese hamster cells 5 (double-strand-break rejoining))
+Interleukin enhancer-binding factor 2 homolog
+Serine/threonine-protein kinase TBK1 (EC 2.7.11.1) (T2K) (TANK-binding kinase 1)
+Inhibitor of nuclear factor kappa-B kinase subunit epsilon (I-kappa-B kinase epsilon) (IKK-E) (IKK-epsilon) (IkBKE) (EC 2.7.11.10) (Inducible I kappa-B kinase) (IKK-i)
+DNA-directed RNA polymerase III subunit RPC9 (RNA polymerase III subunit C9)
+Chitinase domain-containing protein 1
+Triokinase/FMN cyclase (Bifunctional ATP-dependent dihydroxyacetone kinase/FAD-AMP lyase (cyclizing)) [Includes: ATP-dependent dihydroxyacetone kinase (DHA kinase) (EC 2.7.1.28) (EC 2.7.1.29) (Glycerone kinase) (Triokinase) (Triose kinase); FAD-AMP lyase (cyclizing) (EC 4.6.1.15) (FAD-AMP lyase (cyclic FMN forming)) (FMN cyclase)]
+F-box only protein 9
+Serine/threonine-protein phosphatase 6 catalytic subunit (PP6C) (EC 3.1.3.16) (Protein phosphatase V) (PP-V)
+Endoplasmic reticulum aminopeptidase 2 (EC 3.4.11.-)
+NLR family CARD domain-containing protein 4 (Ice protease-activating factor) (Ipaf)
+Tyrosine-protein kinase CSK (EC 2.7.10.2) (C-Src kinase)
+Ectonucleotide pyrophosphatase/phosphodiesterase family member 1 (E-NPP 1) (Membrane component chromosome 6 surface marker 1) (Phosphodiesterase I/nucleotide pyrophosphatase 1) (Plasma-cell membrane glycoprotein PC-1) [Cleaved into: Ectonucleotide pyrophosphatase/phosphodiesterase family member 1, secreted form] [Includes: Alkaline phosphodiesterase I (EC 3.1.4.1); Nucleotide pyrophosphatase (NPPase) (EC 3.6.1.9) (Nucleotide diphosphatase)]
+Embryonic polarity protein dorsal
+Ankyrin repeat domain-containing protein 17 (Ankyrin repeat domain-containing protein FOE) (Gene trap ankyrin repeat protein)
+Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit delta isoform (PI3-kinase subunit delta) (PI3K-delta) (PI3Kdelta) (PtdIns-3-kinase subunit delta) (EC 2.7.1.153) (Phosphatidylinositol 4,5-bisphosphate 3-kinase 110 kDa catalytic subunit delta) (PtdIns-3-kinase subunit p110-delta) (p110delta)
+Protein croquemort (d-CD36)
+Importin subunit alpha-7 (Importin alpha-S2) (Karyopherin subunit alpha-6)
+Acidic mammalian chitinase (AMCase) (EC 3.2.1.14) (YNL)
+Ras-related protein Rac1

@@ -1,0 +1,110 @@
+---
+
+title: "15-Enrichment"
+output: html_document
+---
+
+
+```{bash}
+curl -O https://david.ncifcrf.gov/data/download/chart_01F7E375D21B1573508021226.txt
+```
+
+```{bash}
+head data/chart_01F7E375D21B1573508021226.txt
+```
+
+screenshots
+https://d.pr/i/n74CaC
+
+```{r}
+# A treemap R script produced by the REVIGO server at http://revigo.irb.hr/
+# If you found REVIGO useful in your work, please cite the following reference:
+# Supek F et al. "REVIGO summarizes and visualizes long lists of Gene Ontology
+# terms" PLoS ONE 2011. doi:10.1371/journal.pone.0021800
+
+# author: Anton Kratz <anton.kratz@gmail.com>, RIKEN Omics Science Center, Functional Genomics Technology Team, Japan
+# created: Fri, Nov 02, 2012  7:25:52 PM
+# last change: Fri, Nov 09, 2012  3:20:01 PM
+
+# -----------------------------------------------------------------------------
+# If you don't have the treemap package installed, uncomment the following line:
+#install.packages( "treemap" );
+library(treemap) 								# treemap package by Martijn Tennekes
+
+# Set the working directory if necessary
+# setwd("C:/Users/username/workingdir");
+
+# --------------------------------------------------------------------------
+# Here is your data from REVIGO. Scroll down for plot configuration options.
+
+revigo.names <- c("term_ID","description","freqInDbPercent","abslog10pvalue","uniqueness","dispensability","representative");
+revigo.data <- rbind(c("GO:0000003","reproduction",0.769,1.0391,1.000,0.000,"reproduction"),
+c("GO:0000398","mRNA splicing, via spliceosome",0.315,5.0742,0.760,0.000,"mRNA splicing, via spliceosome"),
+c("GO:0006412","translation",5.686,9.9626,0.745,0.686,"mRNA splicing, via spliceosome"),
+c("GO:0000413","protein peptidyl-prolyl isomerization",0.393,1.4927,0.826,0.259,"mRNA splicing, via spliceosome"),
+c("GO:0006417","regulation of translation",0.692,1.0786,0.756,0.528,"mRNA splicing, via spliceosome"),
+c("GO:0006413","translational initiation",0.518,1.5220,0.788,0.429,"mRNA splicing, via spliceosome"),
+c("GO:0009089","lysine biosynthetic process via diaminopimelate",0.288,1.0893,0.808,0.355,"mRNA splicing, via spliceosome"),
+c("GO:0008380","RNA splicing",0.413,1.9309,0.789,0.656,"mRNA splicing, via spliceosome"),
+c("GO:0002181","cytoplasmic translation",0.064,3.7235,0.815,0.199,"mRNA splicing, via spliceosome"),
+c("GO:0006312","mitotic recombination",0.026,1.2116,0.867,0.384,"mRNA splicing, via spliceosome"),
+c("GO:0009117","nucleotide metabolic process",4.166,1.5150,0.772,0.218,"mRNA splicing, via spliceosome"),
+c("GO:0006261","DNA-dependent DNA replication",0.576,1.0512,0.826,0.491,"mRNA splicing, via spliceosome"),
+c("GO:0006265","DNA topological change",0.268,2.0420,0.755,0.207,"mRNA splicing, via spliceosome"),
+c("GO:0006122","mitochondrial electron transport, ubiquinol to cytochrome c",0.035,1.3612,0.817,0.545,"mRNA splicing, via spliceosome"),
+c("GO:0006364","rRNA processing",0.952,3.7670,0.672,0.639,"mRNA splicing, via spliceosome"),
+c("GO:0030488","tRNA methylation",0.200,1.0302,0.786,0.685,"mRNA splicing, via spliceosome"),
+c("GO:0030163","protein catabolic process",0.997,1.3971,0.824,0.271,"mRNA splicing, via spliceosome"),
+c("GO:0051276","chromosome organization",1.477,1.2777,0.814,0.632,"mRNA splicing, via spliceosome"),
+c("GO:0009451","RNA modification",1.778,1.0546,0.813,0.438,"mRNA splicing, via spliceosome"),
+c("GO:0006508","proteolysis",5.223,1.3734,0.854,0.364,"mRNA splicing, via spliceosome"),
+c("GO:0010501","RNA secondary structure unwinding",0.025,2.8422,0.868,0.220,"mRNA splicing, via spliceosome"),
+c("GO:0043171","peptide catabolic process",0.089,1.1072,0.814,0.504,"mRNA splicing, via spliceosome"),
+c("GO:0007059","chromosome segregation",0.476,1.2838,0.878,0.219,"mRNA splicing, via spliceosome"),
+c("GO:0018401","peptidyl-proline hydroxylation to 4-hydroxy-L-proline",0.001,1.3612,0.816,0.651,"mRNA splicing, via spliceosome"),
+c("GO:0009793","embryo development ending in seed dormancy",0.024,7.4413,0.754,0.000,"embryo development ending in seed dormancy"),
+c("GO:0060291","long-term synaptic potentiation",0.010,1.2116,0.858,0.469,"embryo development ending in seed dormancy"),
+c("GO:0009860","pollen tube growth",0.005,1.0893,0.678,0.636,"embryo development ending in seed dormancy"),
+c("GO:0051447","negative regulation of meiotic cell cycle",0.016,1.0893,0.832,0.611,"embryo development ending in seed dormancy"),
+c("GO:0048364","root development",0.029,2.2139,0.784,0.523,"embryo development ending in seed dormancy"),
+c("GO:0045454","cell redox homeostasis",0.861,1.3069,0.841,0.449,"embryo development ending in seed dormancy"),
+c("GO:0009555","pollen development",0.019,4.0106,0.807,0.484,"embryo development ending in seed dormancy"),
+c("GO:0030435","sporulation resulting in formation of a cellular spore",0.131,3.1013,0.762,0.478,"embryo development ending in seed dormancy"),
+c("GO:0030587","sorocarp development",0.008,2.5068,0.811,0.402,"embryo development ending in seed dormancy"),
+c("GO:0019228","neuronal action potential",0.005,1.3612,0.807,0.433,"embryo development ending in seed dormancy"),
+c("GO:0044351","macropinocytosis",0.002,23.8928,0.936,0.000,"macropinocytosis"),
+c("GO:0072661","protein targeting to plasma membrane",0.005,1.2543,0.790,0.576,"macropinocytosis"),
+c("GO:0006814","sodium ion transport",0.305,1.4912,0.914,0.280,"macropinocytosis"),
+c("GO:0006811","ion transport",5.344,1.0722,0.922,0.389,"macropinocytosis"),
+c("GO:1990035","calcium ion import into cell",0.002,1.0893,0.928,0.482,"macropinocytosis"),
+c("GO:0035725","sodium ion transmembrane transport",0.120,1.1072,0.917,0.642,"macropinocytosis"),
+c("GO:0016192","vesicle-mediated transport",1.085,1.1613,0.927,0.320,"macropinocytosis"),
+c("GO:0006886","intracellular protein transport",1.199,1.5162,0.918,0.186,"macropinocytosis"),
+c("GO:0046686","response to cadmium ion",0.027,5.2832,0.865,0.000,"response to cadmium ion"),
+c("GO:0009651","response to salt stress",0.043,3.4750,0.865,0.231,"response to cadmium ion"),
+c("GO:0009742","brassinosteroid mediated signaling pathway",0.007,1.0893,0.771,0.681,"response to cadmium ion"),
+c("GO:0009873","ethylene-activated signaling pathway",0.005,1.0893,0.776,0.664,"response to cadmium ion"),
+c("GO:0009738","abscisic acid-activated signaling pathway",0.010,2.2305,0.764,0.388,"response to cadmium ion"),
+c("GO:0009735","response to cytokinin",0.012,1.3612,0.833,0.625,"response to cadmium ion"),
+c("GO:0009723","response to ethylene",0.010,1.0893,0.835,0.625,"response to cadmium ion"),
+c("GO:0006952","defense response",0.568,2.3364,0.863,0.456,"response to cadmium ion"),
+c("GO:0042742","defense response to bacterium",0.097,2.1223,0.871,0.486,"response to cadmium ion"),
+c("GO:0046685","response to arsenic-containing substance",0.020,1.3612,0.866,0.404,"response to cadmium ion"),
+c("GO:0006457","protein folding",0.903,1.9145,0.942,0.031,"protein folding"),
+c("GO:0007018","microtubule-based movement",0.287,2.6530,0.832,0.058,"microtubule-based movement"),
+c("GO:0060294","cilium movement involved in cell motility",0.004,1.9248,0.832,0.623,"microtubule-based movement"),
+c("GO:0035082","axoneme assembly",0.018,2.5068,0.738,0.689,"microtubule-based movement"));
+
+stuff <- data.frame(revigo.data);
+names(stuff) <- revigo.names;
+
+stuff$abslog10pvalue <- as.numeric( as.character(stuff$abslog10pvalue) );
+stuff$freqInDbPercent <- as.numeric( as.character(stuff$freqInDbPercent) );
+stuff$uniqueness <- as.numeric( as.character(stuff$uniqueness) );
+stuff$dispensability <- as.numeric( as.character(stuff$dispensability) );
+
+# by default, outputs to a PDF file
+pdf( file="revigo_treemap.pdf", width=16, height=9 ) # width and height are in inches
+
+```
+

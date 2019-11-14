@@ -1,0 +1,60 @@
+---
+title: "14-DEG-annotation"
+output: html_document
+---
+```{r, echo=FALSE}
+library(tidyverse)
+```
+
+
+```{r}
+DEG <- read.delim("analyses/Crab_DEGlist.txt", sep = "\t", header = FALSE)
+str(DEG)
+```
+
+```{r}
+blastout <- read.delim("analyses/Cb_v1_blastx_sp_imac.tab", header = FALSE)
+```
+
+```{r}
+cts <- read.delim("analyses/Abundance-merge.txt", sep = "\t")
+```
+
+```{r}
+deg.table <- left_join(cts, DEG, by = c("target_id" = "V1"),  suffix = c(".x", ".y")) %>%
+  rename(log2fc = V3, padj = V7) %>% select(-"V2", -"V4", -"V5", -"V6") %>%  left_join(blastout, by = c("target_id" = "V1")) %>%
+  rename(up_ID = V2, evalue = V11) %>%
+  select(-"V3", -"V4", -"V5", -"V6",-"V7", -"V8", -"V9", -"V10", -"V12") %>%
+  separate(up_ID, into = c(NA, "acc"), remove = FALSE) %>%
+  filter(!is.na(padj))
+  
+```
+
+```{r}
+
+uniprot_SP_GO.sorted <- read.delim("http://owl.fish.washington.edu/halfshell/bu-alanine-wd/17-07-20/uniprot-SP-GO.sorted", sep = "\t", header = FALSE)
+
+```
+
+```{r}
+deg_unip <- read.delim("data/uniprot-yourlist_M20191111216DA2B77BFBD2E6699CA9B6D1C41EB2531E3DR.tab")
+```
+
+
+```{r}
+deg.annot <- left_join(deg.table, deg_unip, by = c("acc" = "Entry"))
+```
+
+
+```{r}
+write_delim(x = deg.annot, path = "analyses/deg.annot.txt", delim = "\t")
+```
+
+
+```{r}
+big.annot <- left_join(bigtable, deg_unip, by = c("acc" = "Entry"))
+```
+
+```{r}
+write_delim(x = big.annot, path = "analyses/big.annot.txt", delim = "\t")
+```

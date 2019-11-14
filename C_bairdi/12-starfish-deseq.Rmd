@@ -1,0 +1,37 @@
+---
+title: "12-starfish-deseq"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+star.data <- read.table("https://raw.githubusercontent.com/sr320/eimd-sswd/master/data/Phel_countdata.txt", header = T, sep = "\t")
+rownames(star.data) <- data$Feature
+star.data <- star.data[,-1]
+```
+
+```{r}
+head(star.data)
+```
+
+
+
+```{r}
+s.colData <- data.frame(condition=factor(c(rep("Treated", 3), rep("Control", 3))), 
+                             type=factor(rep("single-read", 6)))
+rownames(s.colData) <- colnames(star.data)
+s.dds <- DESeqDataSetFromMatrix(countData = star.data,
+                                     colData = s.colData, 
+                                     design = ~ condition)
+```
+
+
+```{r}
+s.dds <- DESeq(s.dds)
+s.res <- results(s.dds)
+s.res <- s.res[order(rownames(s.res)), ]
+```
+
