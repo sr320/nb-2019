@@ -7,6 +7,7 @@ library(tidyverse)
 ```
 
 
+
 ```{r}
 DEG <- read.delim("analyses/Crab_DEGlist.txt", sep = "\t", header = FALSE)
 str(DEG)
@@ -32,7 +33,7 @@ deg.table <- left_join(cts, DEG, by = c("target_id" = "V1"),  suffix = c(".x", "
 
 ```{r}
 
-uniprot_SP_GO.sorted <- read.delim("http://owl.fish.washington.edu/halfshell/bu-alanine-wd/17-07-20/uniprot-SP-GO.sorted", sep = "\t", header = FALSE)
+#uniprot_SP_GO.sorted <- read.delim("http://owl.fish.washington.edu/halfshell/bu-alanine-wd/17-07-20/uniprot-SP-GO.sorted", sep = "\t", header = FALSE)
 
 ```
 
@@ -51,9 +52,29 @@ write_delim(x = deg.annot, path = "analyses/deg.annot.txt", delim = "\t")
 ```
 
 
+
+
+
 ```{r}
 big.annot <- left_join(bigtable, deg_unip, by = c("acc" = "Entry"))
 ```
+```{r}
+str(big.annot)
+```
+
+
+
+
+
+```{r}
+immune.genes <- filter(big.annot, grepl('immune', Gene.ontology..biological.process.)) %>% select(Protein.names) %>% unique()
+
+
+write_delim(x = immune.genes, path = "analyses/immune.genes.txt", delim = "\t")
+```
+
+
+
 
 ```{r}
 write_delim(x = big.annot, path = "analyses/big.annot.txt", delim = "\t")
